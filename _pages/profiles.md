@@ -1,11 +1,16 @@
 ---
 layout: page
 permalink: /people/
-title: people
+title: ""
 description: Members of the Applied Computational Mechanics Group
 nav: true
 nav_order: 7
+nav_title: Our Team
 ---
+
+<div class="team-heading">
+  <h1>Our Team</h1>
+</div>
 
 <!-- ============================================================
      GROUP LEADER
@@ -305,6 +310,23 @@ nav_order: 7
 
 <style>
 
+
+  /* ==========================================================
+     TEAM HEADING
+     ========================================================== */
+
+.team-heading {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 45px;
+}
+
+.team-heading h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0;
+}
+
+     
   /* ==========================================================
      PI PROFILE
      ========================================================== */
