@@ -1,11 +1,10 @@
 ---
 layout: page
 permalink: /people/
-title: ""
+title: "Team"
 description: ""
 nav: true
 nav_order: 7
-nav_title: Our Team
 ---
 
 <div class="team-heading">
