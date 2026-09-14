@@ -2,7 +2,7 @@
 layout: about
 title: Applied Computational Mechanics Group
 permalink: /
-subtitle: Department of Mechanical Engineering, Indian Institute of Technology Indore
+subtitle: ""
 
 profile:
   align: center
