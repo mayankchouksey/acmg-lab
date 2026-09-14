@@ -32,7 +32,7 @@ Indian Institute of Technology Indore
 
 <div style="text-align: center; margin: 20px 0 40px;">
 
-<img src="{{ '/assets/img/group_photo.jpg' | relative_url }}"
+<img src="{{ '/assets/img/6.jpg' | relative_url }}"
      style="width: 100%; max-width: 1100px; border-radius: 6px;"
      alt="Applied Computational Mechanics Group">
 
