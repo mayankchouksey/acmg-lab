@@ -15,7 +15,7 @@ nav_order: 7
 
   <!-- PI PHOTO -->
   <div class="pi-photo">
-    <img src="{{ '/assets/img/prof_pic.jpg' | relative_url }}"
+    <img src="{{ '/assets/img/6.jpg' | relative_url }}"
          alt="Dr. Mayank Chouksey">
   </div>
 
@@ -61,7 +61,7 @@ nav_order: 7
     <div class="pi-socials">
 
       <!-- Google Scholar -->
-      <a href="YOUR_GOOGLE_SCHOLAR_LINK"
+      <a href="https://scholar.google.com/citations?user=Tt0enWsAAAAJ&hl=en&oi=ao"
          target="_blank"
          rel="noopener"
          aria-label="Google Scholar"
@@ -70,7 +70,7 @@ nav_order: 7
       </a>
 
       <!-- LinkedIn -->
-      <a href="YOUR_LINKEDIN_LINK"
+      <a href="https://www.linkedin.com/in/mayank-chouksey-24529844/"
          target="_blank"
          rel="noopener"
          aria-label="LinkedIn"
@@ -79,7 +79,7 @@ nav_order: 7
       </a>
 
       <!-- ResearchGate -->
-      <a href="YOUR_RESEARCHGATE_LINK"
+      <a href="https://www.researchgate.net/profile/Mayank-Chouksey-2?ev=hdr_xprf"
          target="_blank"
          rel="noopener"
          aria-label="ResearchGate"
@@ -88,7 +88,7 @@ nav_order: 7
       </a>
 
       <!-- ORCID -->
-      <a href="YOUR_ORCID_LINK"
+      <a href="https://orcid.org/my-orcid?orcid=0000-0001-6479-4944"
          target="_blank"
          rel="noopener"
          aria-label="ORCID"
@@ -96,17 +96,17 @@ nav_order: 7
         <i class="ai ai-orcid"></i>
       </a>
 
-      <!-- GitHub -->
-      <a href="YOUR_GITHUB_LINK"
-         target="_blank"
-         rel="noopener"
-         aria-label="GitHub"
-         title="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
+      #<!-- GitHub -->
+      #<a href="YOUR_GITHUB_LINK"
+      #   target="_blank"
+      #   rel="noopener"
+      #   aria-label="GitHub"
+      #   title="GitHub">
+      #  <i class="fab fa-github"></i>
+      #</a>
 
       <!-- Email -->
-      <a href="mailto:YOUR_EMAIL_ADDRESS"
+      <a href="mailto:mayank@iiti.ac.in"
          aria-label="Email"
          title="Email">
         <i class="fas fa-envelope"></i>
