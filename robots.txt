@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://mayankchouksey.github.io/acmg-lab/sitemap.xml
+Sitemap: https://mayankchouksey.github.io/acmg-lab//sitemap.xml
