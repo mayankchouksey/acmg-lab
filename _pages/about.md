@@ -8,13 +8,36 @@ subtitle: ""
 
 selected_papers: false
 social: false
+
 announcements:
   enabled: false
+
 latest_posts:
   enabled: false
 ---
 
+<div style="text-align: center; margin-bottom: 30px;">
 
+<h1 style="margin-bottom: 8px;">Applied Computational Mechanics Group</h1>
+
+<h2 style="font-size: 1.6rem; margin: 4px 0; font-weight: 400;">
+Department of Mechanical Engineering
+</h2>
+
+<h2 style="font-size: 1.6rem; margin: 4px 0 25px; font-weight: 400;">
+Indian Institute of Technology Indore
+</h2>
+
+</div>
+
+<div style="text-align: center; margin: 20px 0 40px;">
+
+<img src="{{ '/assets/img/group_photo.jpg' | relative_url }}"
+     style="width: 100%; max-width: 1100px; border-radius: 6px;"
+     alt="Applied Computational Mechanics Group">
+
+</div>
+---
 
 ### Computational Mechanics of Materials
 
