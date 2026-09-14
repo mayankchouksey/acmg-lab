@@ -212,7 +212,28 @@ nav_order: 7
 <h2 class="people-section-title">MS / MTech Students</h2>
 <div class="students-grid">
 
+
   <!-- Student 1 -->
+  <div class="student-card">
+    <div class="student-photo">
+      <img src="{{ '/assets/img/4.jpg' | relative_url }}"
+           alt="Pranali Rao">
+    </div>
+
+    <div class="student-info">
+      <h3>Pranali Rao</h3>
+      <p class="student-degree">
+        MS Student
+      </p>
+
+      <p>
+        <strong>Research:</strong>
+        Effect of void distribution on ductile failure
+      </p>
+    </div>
+  </div>
+  
+  <!-- Student 2 -->
   <div class="student-card">
     <div class="student-photo">
       <img src="{{ '/assets/img/3.jpg' | relative_url }}"
@@ -229,14 +250,11 @@ nav_order: 7
         <strong>Research:</strong>
         Homogenized constitutive framework using data-driven framework
       </p>
-
     </div>
   </div>
 
-
-  <!-- Student 2 -->
+  <!-- Student 3 -->
   <div class="student-card">
-
     <div class="student-photo">
       <img src="{{ '/assets/img/3.jpg' | relative_url }}"
            alt="Anshuman Singh">
@@ -245,16 +263,16 @@ nav_order: 7
     <div class="student-info">
       <h3>Anshuman Singh</h3>
       <p class="student-degree">
-        MS Student
+        MTech Student
       </p>
 
       <p>
         <strong>Research:</strong>
         Unit cell calculations accounting for micro-inertia effect
       </p>
-
     </div>
   </div>
+
 
 </div>
 
