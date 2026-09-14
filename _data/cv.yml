@@ -15,16 +15,16 @@ cv:
       username: example
 
   address:
-    street: C52 Kshipra Residential Apartment, IIT Indore
+    street: O No. 11, CGS Building, IIT Indore
     city: Indore
-    region: Madhya Pradesh
+    region: MP
     postalCode: 452020
     countryCode: IND
 
   sections:
     Education:
       - institution: Indian Institute of Technology Kanpur
-        location: Kanpur, Uttar Pradesh, India
+        location: Kanpur, India
         url: https://www.iitk.ac.in/
         area: Computation Mechanics
         studyType: PhD
@@ -37,7 +37,7 @@ cv:
           - Description 2.
 
       - institution: Motilal Nehru National Institute of Technology Allahabad
-        location: Prayagraj, Uttar Pradesh, India
+        location: Prayagraj, India
         area: Mechanical Engineering
         studyType: M.Tech.
         start_date: 2010
@@ -49,14 +49,14 @@ cv:
     Experience:
       - company: Indian Institute of Technology Indore
         position: Assistant Professor
-        location: Indore, Madhya Pradesh, India
+        location: Indore, India
         start_date: Feb 2024
         end_date: Current
 
       
       - company: Texas A \& M University,
         position: Postdoctoral Fellow
-        location: Collage Station, Texas, USA
+        location: CS, TX, USA
         start_date: Oct 2022
         end_date: Jan 2024
         summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
