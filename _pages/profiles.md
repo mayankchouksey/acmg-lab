@@ -96,14 +96,14 @@ nav_order: 7
         <i class="ai ai-orcid"></i>
       </a>
 
-      #<!-- GitHub -->
-      #<a href="YOUR_GITHUB_LINK"
-      #   target="_blank"
-      #   rel="noopener"
-      #   aria-label="GitHub"
-      #   title="GitHub">
-      #  <i class="fab fa-github"></i>
-      #</a>
+      <!-- GitHub -->
+      <a href="https://github.com/mayankchouksey"
+         target="_blank"
+         rel="noopener"
+         aria-label="GitHub"
+         title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
 
       <!-- Email -->
       <a href="mailto:mayank@iiti.ac.in"
@@ -193,10 +193,51 @@ nav_order: 7
      ============================================================ -->
 
 <h2 class="people-section-title">MS / MTech Students</h2>
-
 <div class="students-grid">
 
-  <!-- Add MS / MTech students here -->
+  <!-- Student 1 -->
+  <div class="student-card">
+    <div class="student-photo">
+      <img src="{{ '/assets/img/3.jpg' | relative_url }}"
+           alt="Utkarsh Dubey">
+    </div>
+
+    <div class="student-info">
+      <h3>Utkarsh Dubey</h3>
+      <p class="student-degree">
+        MTech Student
+      </p>
+
+      <p>
+        <strong>Research:</strong>
+        Homogenized constitutive framework using data-driven framework
+      </p>
+
+    </div>
+  </div>
+
+
+  <!-- Student 2 -->
+  <div class="student-card">
+
+    <div class="student-photo">
+      <img src="{{ '/assets/img/3.jpg' | relative_url }}"
+           alt="Anshuman Singh">
+    </div>
+
+    <div class="student-info">
+      <h3>Anshuman Singh</h3>
+      <p class="student-degree">
+        MS Student
+      </p>
+
+      <p>
+        <strong>Research:</strong>
+        Unit cell calculations accounting for micro-inertia effect
+      </p>
+
+    </div>
+  </div>
 
 </div>
 
@@ -207,10 +248,54 @@ nav_order: 7
 
 <h2 class="people-section-title">Alumni</h2>
 
-<div class="students-grid">
+<div class="alumni-list">
 
-  <!-- Add alumni here -->
+<!-- =1st Alumni Student = -->
+  <div class="alumni-row">
+    <div class="alumni-name">
+      Anant Singhal
+    </div>
 
+    <div class="alumni-degree">
+      M.Tech., 2026
+    </div>
+
+    <div class="alumni-position">
+      Research Engineer, XXXXXXXX
+    </div>
+  </div>
+
+<!-- =2nd Alumni Student = -->
+  <div class="alumni-row">
+    <div class="alumni-name">
+      Devesh Agrawal
+    </div>
+
+    <div class="alumni-degree">
+      M.Tech, 2025
+    </div>
+
+    <div class="alumni-position">
+      Research Engineering, XXXXXXXXX
+    </div>
+  </div>
+
+<!-- =1st Alumni Student = -->
+  <div class="alumni-row">
+    <div class="alumni-name">
+      Chandra Pratap Singh
+    </div>
+
+    <div class="alumni-degree">
+      M.Tech, 2025
+    </div>
+
+    <div class="alumni-position">
+      Engineer, ONGC
+    </div>
+  </div>
+
+  
 </div>
 
 
@@ -364,6 +449,55 @@ nav_order: 7
     margin-bottom: 5px;
   }
 
+
+  /* ==========================================================
+     ALUMNI CARD
+     ========================================================== */
+
+
+.alumni-list {
+  margin-bottom: 40px;
+}
+
+.alumni-row {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 2fr;
+  column-gap: 25px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--global-divider-color);
+  align-items: center;
+}
+
+.alumni-name {
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+
+.alumni-degree {
+  font-size: 0.95rem;
+}
+
+.alumni-position {
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+
+  .alumni-row {
+    grid-template-columns: 1fr;
+    row-gap: 4px;
+    padding: 15px 0;
+  }
+
+  .alumni-degree,
+  .alumni-position {
+    font-size: 0.9rem;
+  }
+
+}
+
+
+     
 
   /* ==========================================================
      MOBILE
