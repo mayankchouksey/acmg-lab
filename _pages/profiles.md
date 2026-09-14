@@ -2,7 +2,7 @@
 layout: page
 permalink: /people/
 title: ""
-description: Members of the Applied Computational Mechanics Group
+description: ""
 nav: true
 nav_order: 7
 nav_title: Our Team
@@ -11,6 +11,22 @@ nav_title: Our Team
 <div class="team-heading">
   <h1>Our Team</h1>
 </div>
+<!-- ============================================================
+     PAGE HEADER
+     ============================================================ -->
+
+<div class="page-header-clean">
+
+  <h1>Our Team</h1>
+
+  <p>
+    Our group brings together researchers and students working on computational mechanics and the mechanics of materials, with a focus on understanding and predicting material behaviour.
+  </p>
+
+</div>
+
+<div class="page-header-line"></div>
+
 
 <!-- ============================================================
      GROUP LEADER
@@ -326,7 +342,34 @@ nav_title: Our Team
   margin-bottom: 0;
 }
 
-     
+/* ============================================================
+   CLEAN PAGE HEADER
+   ============================================================ */
+
+.page-header-clean {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 28px;
+}
+
+.page-header-clean h1 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.page-header-clean p {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.page-header-line {
+  border-bottom: 2px solid var(--global-text-color);
+  margin-bottom: 42px;
+}
+  
   /* ==========================================================
      PI PROFILE
      ========================================================== */
