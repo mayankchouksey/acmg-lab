@@ -4,11 +4,7 @@ title: ACMG
 permalink: /
 subtitle: ""
 
-profile:
-  align: center
-  image: prof_pic.jpg
-  image_circular: false
-  more_info: ""
+
 
 selected_papers: false
 social: false
@@ -18,7 +14,7 @@ latest_posts:
   enabled: false
 ---
 
-# Applied Computational Mechanics Group
+
 
 ### Computational Mechanics of Materials
 
