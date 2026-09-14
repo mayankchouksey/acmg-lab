@@ -1,6 +1,6 @@
 ---
 layout: about
-title: Applied Computational Mechanics Group
+title: ACMG
 permalink: /
 subtitle: ""
 
