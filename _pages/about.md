@@ -1,6 +1,6 @@
 ---
 layout: about
-title: ACMG
+title: ""
 permalink: /
 subtitle: ""
 
