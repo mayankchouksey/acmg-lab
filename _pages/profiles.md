@@ -281,6 +281,41 @@ nav_order: 7
 </div>
 
 
+
+<!-- ============================================================
+     Project Staf
+     ============================================================ -->
+
+<h2 class="people-section-title">Project Staf</h2>
+<div class="students-grid">
+
+
+  <!-- Student 1 -->
+  <div class="student-card">
+    <div class="student-photo">
+      <img src="{{ '/assets/img/5.jpg' | relative_url }}"
+           alt="Shivam Kumar Vishwakarma">
+    </div>
+
+    <div class="student-info">
+      <h3>Shivam Kumar Vishwakarma</h3>
+      <p class="student-degree">
+        Junior Research Fellow
+      </p>
+
+      <p>
+        <strong>Research:</strong>
+        Effect of void distribution on ductile failure
+      </p>
+    </div>
+  </div>
+  
+
+</div>
+
+
+
+
 <!-- ============================================================
      ALUMNI
      ============================================================ -->
