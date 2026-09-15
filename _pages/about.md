@@ -65,3 +65,11 @@ We develop computational frameworks that connect **material behaviour across len
 Assistant Professor  
 Department of Mechanical Engineering  
 Indian Institute of Technology Indore
+
+
+
+<style>
+.post-title {
+  display: none !important;
+}
+</style>
