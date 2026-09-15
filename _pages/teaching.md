@@ -21,8 +21,8 @@ nav_order: 6
 
 <ul class="course-list">
   <li>Engineering Mechanics <span>(ME101)</span></li>
-  <li>Strength of Materials <span>(ME201)</span></li>
-  <li>Mechanics of Materials <span>(ME202)</span></li>
+  <li>Solid Mechanics <span>(ME201N)</span></li>
+  <li>Strength of Materials <span>(ME202N)</span></li>
 </ul>
 
 <h2>Graduate Courses</h2>
@@ -30,7 +30,7 @@ nav_order: 6
 <ul class="course-list">
   <li>Theory of Elasticity <span>(ME730)</span></li>
   <li>Theory of Plasticity <span>(ME466 / ME666)</span></li>
-  <li>Fracture Mechanics</li>
+  <li>Fracture Mechanics <span>(ME437/ ME637)</span> </li>
 </ul>
 
 <style>
