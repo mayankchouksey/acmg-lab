@@ -16,7 +16,7 @@ nav_order: 7
   <h1>Our Team</h1>
 
   <p>
-    Our group brings together researchers and students working on computational mechanics and the mechanics of materials, with a focus on understanding and predicting material behaviour.
+    Our group brings together researchers and students working on computational mechanics and the mechanics of materials, with a focus on understanding and predicting material behavior.
   </p>
 
 </div>
