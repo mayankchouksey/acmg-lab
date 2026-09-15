@@ -7,183 +7,76 @@ nav: true
 nav_order: 6
 ---
 
-<!-- ============================================================
-     PAGE HEADER
-     ============================================================ -->
-
 <div class="page-header-clean">
-
   <h1>Teaching</h1>
-
   <p>
     Courses taught by Dr. Mayank Chouksey in mechanics, plasticity,
     and mechanics of materials.
   </p>
-
 </div>
 
 <div class="page-header-line"></div>
 
-
-<!-- ============================================================
-     UNDERGRADUATE COURSES
-     ============================================================ -->
-
 <h2>Undergraduate Courses</h2>
 
-<div class="course-list">
-
-  <div class="course-item">
-    <span class="course-name">Engineering Mechanics</span>
-    <span class="course-code">ME101</span>
-  </div>
-
-  <div class="course-item">
-    <span class="course-name">Strength of Materials</span>
-    <span class="course-code">ME201</span>
-  </div>
-
-  <div class="course-item">
-    <span class="course-name">Mechanics of Materials</span>
-    <span class="course-code">ME202</span>
-  </div>
-
-</div>
-
-
-<!-- ============================================================
-     GRADUATE COURSES
-     ============================================================ -->
+<ul class="course-list">
+  <li>Engineering Mechanics <span>(ME101)</span></li>
+  <li>Strength of Materials <span>(ME201)</span></li>
+  <li>Mechanics of Materials <span>(ME202)</span></li>
+</ul>
 
 <h2>Graduate Courses</h2>
 
-<div class="course-list">
-
-  <div class="course-item">
-    <span class="course-name">Theory of Elasticity</span>
-    <span class="course-code">ME730</span>
-  </div>
-
-  <div class="course-item">
-    <span class="course-name">Theory of Plasticity</span>
-    <span class="course-code">ME466 / ME666</span>
-  </div>
-
-  <div class="course-item">
-    <span class="course-name">Fracture Mechanics</span>
-    <span class="course-code">—</span>
-  </div>
-
-</div>
-
-
-<!-- ============================================================
-     PAGE STYLING
-     ============================================================ -->
+<ul class="course-list">
+  <li>Theory of Elasticity <span>(ME730)</span></li>
+  <li>Theory of Plasticity <span>(ME466 / ME666)</span></li>
+  <li>Fracture Mechanics</li>
+</ul>
 
 <style>
+.post-title {
+  display: none;
+}
 
-  /* ------------------------------------------------------------
-     Hide automatic al-folio page title
-     ------------------------------------------------------------ */
+.page-header-clean {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 28px;
+}
 
-  .post-title {
-    display: none;
-  }
+.page-header-clean h1 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
 
+.page-header-clean p {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
 
-  /* ------------------------------------------------------------
-     Clean page header
-     ------------------------------------------------------------ */
+.page-header-line {
+  border-bottom: 2px solid var(--global-text-color);
+  margin-bottom: 38px;
+}
 
-  .page-header-clean {
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 28px;
-  }
+.post-content h2 {
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
 
-  .page-header-clean h1 {
-    font-size: 2.4rem;
-    font-weight: 400;
-    margin-bottom: 12px;
-  }
+.course-list {
+  margin-top: 0;
+  margin-bottom: 28px;
+}
 
-  .page-header-clean p {
-    max-width: 720px;
-    margin: 0 auto;
-    font-size: 1.05rem;
-    line-height: 1.6;
-  }
+.course-list li {
+  margin-bottom: 8px;
+}
 
-
-  /* ------------------------------------------------------------
-     Divider
-     ------------------------------------------------------------ */
-
-  .page-header-line {
-    border-bottom: 2px solid var(--global-text-color);
-    margin-bottom: 42px;
-  }
-
-
-  /* ------------------------------------------------------------
-     Section headings
-     ------------------------------------------------------------ */
-
-  .post-content h2 {
-    margin-top: 38px;
-    margin-bottom: 18px;
-  }
-
-
-  /* ------------------------------------------------------------
-     Course list
-     ------------------------------------------------------------ */
-
-  .course-list {
-    max-width: 850px;
-  }
-
-  .course-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 13px 5px;
-
-    border-bottom: 1px solid var(--global-divider-color);
-  }
-
-  .course-name {
-    font-size: 1.05rem;
-  }
-
-  .course-code {
-    font-size: 0.95rem;
-    opacity: 0.75;
-    white-space: nowrap;
-    margin-left: 20px;
-  }
-
-
-  /* ------------------------------------------------------------
-     Mobile
-     ------------------------------------------------------------ */
-
-  @media (max-width: 600px) {
-
-    .course-item {
-      align-items: flex-start;
-    }
-
-    .course-name {
-      font-size: 1rem;
-    }
-
-    .course-code {
-      font-size: 0.9rem;
-    }
-
-  }
-
+.course-list span {
+  opacity: 0.7;
+}
 </style>
