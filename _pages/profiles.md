@@ -187,7 +187,7 @@ nav_order: 7
 
     <div class="student-info">
 
-      <h3>Ashesh Parmar</h3>
+      <h3>Parmar Ashesh Lalitkumar</h3>
 
       <p class="student-degree">
         PhD Student
@@ -248,7 +248,7 @@ nav_order: 7
 
       <p>
         <strong>Research:</strong>
-        Homogenized constitutive framework using data-driven framework
+        Homogenized constitutive framework using a data-driven framework
       </p>
     </div>
   </div>
@@ -288,21 +288,6 @@ nav_order: 7
 <!-- =1st Alumni Student = -->
   <div class="alumni-row">
     <div class="alumni-name">
-      Anant Singhal
-    </div>
-
-    <div class="alumni-degree">
-      M.Tech., 2026
-    </div>
-
-    <div class="alumni-position">
-      Research Engineer, XXXXXXXX
-    </div>
-  </div>
-
-<!-- =2nd Alumni Student = -->
-  <div class="alumni-row">
-    <div class="alumni-name">
       Devesh Agrawal
     </div>
 
@@ -315,7 +300,7 @@ nav_order: 7
     </div>
   </div>
 
-<!-- =1st Alumni Student = -->
+<!-- =2nd Alumni Student = -->
   <div class="alumni-row">
     <div class="alumni-name">
       Chandra Pratap Singh
@@ -327,6 +312,21 @@ nav_order: 7
 
     <div class="alumni-position">
       Engineer, ONGC
+    </div>
+  </div>
+
+<!-- =3rd Alumni Student = -->
+  <div class="alumni-row">
+    <div class="alumni-name">
+      Anant Kumar
+    </div>
+
+    <div class="alumni-degree">
+      M.Tech., 2026
+    </div>
+
+    <div class="alumni-position">
+      Research Engineer, XXXXXXXX
     </div>
   </div>
 
