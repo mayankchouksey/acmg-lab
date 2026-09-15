@@ -68,14 +68,17 @@ nav_order: 6
 }
 
 .course-list {
+  display: block !important;
   margin-top: 0;
   margin-bottom: 28px;
+  padding-left: 25px;
 }
 
 .course-list li {
+  display: list-item !important;
   margin-bottom: 8px;
 }
-
+  
 .course-list span {
   opacity: 0.7;
 }
