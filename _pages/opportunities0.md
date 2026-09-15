@@ -35,13 +35,8 @@ nav_order: 8
   problems in computational mechanics and mechanics of materials.
   Research directions are shaped by the broader interests of the group
   as well as the interests, background, and aspirations of individual
-  researchers.
-</p>
-
-<p>
-  We are open to discussing new research questions and directions,
-  with specific research problems developed through interaction,
-  discussion, and collaboration.
+  researchers. We are open to discussing new research questions and directions
+  through interaction, discussion, and collaboration.
 </p>
 
 
@@ -60,13 +55,6 @@ nav_order: 8
   address them.
 </p>
 
-<p>
-  PhD research typically involves substantial independent work, critical
-  analysis of scientific literature, development of computational or
-  theoretical frameworks, and dissemination of research through
-  scientific publications and presentations.
-</p>
-
 
 <!-- ============================================================
      MS / MTECH OPPORTUNITIES
@@ -76,16 +64,10 @@ nav_order: 8
 
 <p>
   MS and MTech students undertake focused research projects involving
-  computational modelling, advanced numerical techniques, and analysis
-  of material behaviour. The work provides an opportunity to develop
+  computational modeling, advanced numerical techniques, and analysis
+  of material behavior. The work provides an opportunity to develop
   research skills while addressing a well-defined problem in mechanics
   and materials.
-</p>
-
-<p>
-  Students gain experience in formulating problems, selecting appropriate
-  modelling approaches, interpreting results, and communicating their
-  findings in a scientific manner.
 </p>
 
 
@@ -97,15 +79,8 @@ nav_order: 8
 
 <p>
   Undergraduate students can engage with ACMG through BTech projects,
-  research projects, and other academic activities. These opportunities
-  provide exposure to research methodology, computational approaches,
-  and the process of formulating and investigating engineering problems.
-</p>
-
-<p>
-  Undergraduate research is intended to help students develop an
-  appreciation for scientific inquiry and, where appropriate, provide
-  a foundation for pursuing further research.
+  research projects, and other academic activities, gaining exposure to computational
+  approaches and scientific research.
 </p>
 
 
@@ -139,14 +114,15 @@ nav_order: 8
 <h2>How to Connect</h2>
 
 <p>
-  If you are interested in working with ACMG, we encourage you to
-  explore the group's research areas and get in touch to discuss your
-  interests and possible research directions.
+  Interested students are encouraged to explore the
+  <a href="{{ '/research/' | relative_url }}">research areas</a>
+  of ACMG and get in touch to discuss their interests and possible
+  research directions.
 </p>
 
 <p>
   <strong>Email:</strong>
-  YOUR_EMAIL_ADDRESS
+  mayank@iiti.ac.in
 </p>
 
 
