@@ -129,6 +129,10 @@ nav_order: 7
         <i class="fas fa-envelope"></i>
       </a>
 
+      <a href="{{ '/cv/' | relative_url }}" title="Curriculum Vitae">
+        <i class="fas fa-file-lines"></i>
+      </a>
+
     </div>
 
   </div>
