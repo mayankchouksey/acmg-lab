@@ -59,12 +59,16 @@ We develop computational frameworks that connect **material behaviour across len
 
 ---
 
+
+<!--
 ## Group Leader
 
 **Dr. Mayank Chouksey**  
 Assistant Professor  
 Department of Mechanical Engineering  
 Indian Institute of Technology Indore
+-->
+
 
 
 <style>
