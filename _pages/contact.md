@@ -4,7 +4,7 @@ permalink: /contact/
 title: contact
 description: ""
 nav: true
-nav_order: 9
+nav_order: 8
 ---
 
 <div class="page-header-clean">
