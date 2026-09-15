@@ -1,17 +1,12 @@
 ---
 layout: about
-title: "home"
+title: "ACMG"
 permalink: /
 subtitle: ""
-
-
-
 selected_papers: false
 social: false
-
 announcements:
   enabled: false
-
 latest_posts:
   enabled: false
 ---
