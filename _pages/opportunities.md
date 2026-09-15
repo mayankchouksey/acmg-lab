@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /opportunities0/
-title: opportunities0
+permalink: /opportunities/
+title: opportunities
 description: ""
 nav: true
 nav_order: 8
