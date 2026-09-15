@@ -2,9 +2,9 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: "" # the website title (if blank, full name will be used instead)
+title: ACMG # the website title (if blank, full name will be used instead)
 first_name: Applied Computational Mechanics
-# middle_name: ""
+middle_name: ""
 last_name: Group
 affiliations:
   - Department of Mechanical Engineering
