@@ -1,8 +1,3 @@
-{% comment %}
-{% include calendar.liquid calendar_id='test@gmail.com' timezone='Asia/Shanghai' %}
-{% include courses.liquid %}
-{% endcomment %}
-
 ---
 layout: page
 permalink: /teaching/
