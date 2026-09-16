@@ -25,7 +25,6 @@ nav_order: 5
 
 <h2>Journal Publications</h2>
 
-{% include bib_search.liquid %}
 
 <div class="publications">
   {% bibliography --file papers %}
