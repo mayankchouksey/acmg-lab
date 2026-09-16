@@ -28,6 +28,9 @@ nav_order: 5
   Peer-reviewed journal articles.
 </p>
 
+<!-- Bibsearch Feature -->
+{% include bib_search.liquid %}
+
 <div class="publications compact-publications">
   {% bibliography --file papers %}
 </div>
