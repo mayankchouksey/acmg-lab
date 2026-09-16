@@ -35,28 +35,29 @@ nav_order: 5
 
 <!-- ==================== CONFERENCES ==================== -->
 
-<h2>Conferences</h2>
+<!--  ~~~~~~~~~COMMENTED
 
+<h2>Conferences</h2>
 <p class="output-description">
   Conference presentations and participation.
 </p>
-
 <div class="publications compact-publications">
   {% bibliography --file conferences %}
 </div>
-
+~~~~~COMMENTED -->
 
 <!-- ==================== TALKS ==================== -->
 
-<h2>Talks</h2>
+<!--  ~~~~~~~~~COMMENTED
 
+<h2>Talks</h2>
 <p class="output-description">
   Invited academic talks and seminars.
 </p>
-
 <div class="publications compact-publications">
   {% bibliography --file talks %}
 </div>
+~~~~~COMMENTED -->
 
 
 <style>
