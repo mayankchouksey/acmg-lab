@@ -120,11 +120,12 @@ nav_order: 7
   research directions.
 </p>
 
+<!--
 <p>
   <strong>Email:</strong>
   mayank@iiti.ac.in
 </p>
-
+-->
 
 <!-- ============================================================
      PAGE STYLING
