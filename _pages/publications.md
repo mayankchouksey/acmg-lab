@@ -16,101 +16,134 @@ nav_order: 5
   </p>
 </div>
 
+
 <div class="page-header-line"></div>
 
 
-<!-- ========================================================= -->
-<!-- JOURNAL PUBLICATIONS                                      -->
-<!-- ========================================================= -->
+<!-- ==================== PUBLICATIONS ==================== -->
 
-<h2>Journal Publications</h2>
+<h2>Publications</h2>
 
+<p class="output-description">
+  Peer-reviewed journal articles.
+</p>
 
-<div class="publications">
+<div class="publications compact-publications">
   {% bibliography --file papers %}
 </div>
 
 
-<!-- ========================================================= -->
-<!-- CONFERENCE PARTICIPATION                                  -->
-<!-- ========================================================= -->
+<!-- ==================== CONFERENCES ==================== -->
 
-<h2>Conference Participation</h2>
+<h2>Conferences</h2>
 
-<div class="publications">
+<p class="output-description">
+  Conference presentations and participation.
+</p>
+
+<div class="publications compact-publications">
   {% bibliography --file conferences %}
 </div>
 
 
-<!-- ========================================================= -->
-<!-- INVITED TALKS                                             -->
-<!-- ========================================================= -->
+<!-- ==================== TALKS ==================== -->
 
-<h2>Invited Talks</h2>
+<h2>Talks</h2>
 
-<div class="publications">
+<p class="output-description">
+  Invited academic talks and seminars.
+</p>
+
+<div class="publications compact-publications">
   {% bibliography --file talks %}
 </div>
 
 
 <style>
 
+/* ---------- Page Header ---------- */
+
 .post-title {
   display: none;
 }
 
-
-/* --------------------------------------------------------- */
-/* Page Header                                               */
-/* --------------------------------------------------------- */
-
 .page-header-clean {
   text-align: center;
   margin-top: 5px;
-  margin-bottom: 28px;
+  margin-bottom: 22px;
 }
 
 .page-header-clean h1 {
   font-size: 2.4rem;
   font-weight: 400;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .page-header-clean p {
   max-width: 720px;
   margin: 0 auto;
   font-size: 1.05rem;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 .page-header-line {
   border-bottom: 2px solid var(--global-text-color);
-  margin-bottom: 38px;
+  margin-bottom: 30px;
 }
 
 
-/* --------------------------------------------------------- */
-/* Section Headings                                          */
-/* --------------------------------------------------------- */
+/* ---------- Section Headings ---------- */
 
 .post-content h2 {
-  margin-top: 42px;
+  margin-top: 30px;
+  margin-bottom: 4px;
+  font-size: 1.55rem;
+  font-weight: 500;
+}
+
+.output-description {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 0.92rem;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+
+/* ---------- Compact Bibliography ---------- */
+
+.compact-publications {
   margin-bottom: 20px;
 }
 
+/* Reduce spacing between bibliography entries */
+.compact-publications ol.bibliography {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
-/* --------------------------------------------------------- */
-/* Bibliography Sections                                     */
-/* --------------------------------------------------------- */
-
-.publications {
-  margin-bottom: 35px;
+.compact-publications ol.bibliography li {
+  margin-bottom: 12px;
+  padding-bottom: 0;
+  line-height: 1.45;
 }
 
 
-/* --------------------------------------------------------- */
-/* Mobile                                                    */
-/* --------------------------------------------------------- */
+/* Remove excessive paragraph spacing */
+.compact-publications p {
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+
+/* Reduce space around links/buttons */
+.compact-publications .links {
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
+
+/* ---------- Mobile ---------- */
 
 @media (max-width: 600px) {
 
@@ -122,7 +155,15 @@ nav_order: 5
     font-size: 1rem;
   }
 
+  .post-content h2 {
+    font-size: 1.35rem;
+    margin-top: 26px;
+  }
+
+  .compact-publications ol.bibliography li {
+    margin-bottom: 10px;
+  }
+
 }
 
 </style>
-
