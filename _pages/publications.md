@@ -38,8 +38,7 @@ nav_order: 5
 
 <!-- ==================== CONFERENCES ==================== -->
 
-<!--  ~~~~~~~~~COMMENTED
-
+<!--
 <h2>Conferences</h2>
 <p class="output-description">
   Conference presentations and participation.
@@ -47,12 +46,11 @@ nav_order: 5
 <div class="publications compact-publications">
   {% bibliography --file conferences %}
 </div>
-~~~~~COMMENTED -->
+-->
 
 <!-- ==================== TALKS ==================== -->
 
-<!--  ~~~~~~~~~COMMENTED
-
+<!--
 <h2>Talks</h2>
 <p class="output-description">
   Invited academic talks and seminars.
@@ -60,7 +58,7 @@ nav_order: 5
 <div class="publications compact-publications">
   {% bibliography --file talks %}
 </div>
-~~~~~COMMENTED -->
+-->
 
 
 <style>
