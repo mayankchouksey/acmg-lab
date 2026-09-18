@@ -20,7 +20,7 @@ nav_order: 2
     <h1>Our Team</h1>
 
     <p>
-      The researchers and students of the Applied Computational Mechanics Group.
+       Our group brings together researchers and students working on computational mechanics and the mechanics of materials, with a focus on understanding and predicting material behavior.
     </p>
 
   </div>
@@ -534,19 +534,15 @@ nav_order: 2
 <!-- ============================================================
      PAGE HEADER
      ============================================================ -->
-
+<!--
 <div class="page-header-clean">
-
   <h1>Our Team</h1>
-
   <p>
     Our group brings together researchers and students working on computational mechanics and the mechanics of materials, with a focus on understanding and predicting material behavior.
   </p>
-
 </div>
-
 <div class="page-header-line"></div>
-
+-->
 
 <!-- ============================================================
      GROUP LEADER
