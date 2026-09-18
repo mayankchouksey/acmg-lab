@@ -448,6 +448,7 @@ header.addEventListener("mouseleave", function () {
 </p>
 
 
+
 <!--
 ---
 ### Computational Mechanics of Materials
@@ -461,30 +462,13 @@ Our research spans **deformation, plasticity, damage, fracture, and failure of m
 
 <h2>What We Do at ACMG</h2>
 
-<p>
-  Materials respond differently when they are stretched, compressed, heated,
-  loaded quickly, or subjected to complex conditions. Understanding these
-  responses helps us predict when and how materials will deform, become
-  damaged, or eventually fail.
-</p>
+Materials respond differently when they are stretched, compressed, heated, loaded quickly, or subjected to complex conditions. Understanding these responses helps us predict when and how materials will deform, become damaged, or eventually fail.
 
-<p>
-  At ACMG, we use mechanics, mathematics, and computational methods to study
-  these behaviours. We look at what happens inside materials at small scales
-  and how these mechanisms influence their overall response. Our work covers
-  deformation, plasticity, damage, fracture, and failure, including behaviour
-  under dynamic loading and in advanced materials and energy-storage systems.
-</p>
+At ACMG, we use mechanics, mathematics, and computational methods to study these behaviors. We look at what happens inside materials at small scales and how these mechanisms influence their overall response. Our work covers deformation, plasticity, damage, fracture, and failure, including behavior under dynamic loading and in advanced materials and energy-storage systems.
 
-<p>
-  In simple terms, we try to understand
-  <strong>why materials behave the way they do—and use that understanding
-  to predict what happens next.</strong>
-</p>
+In simple terms, we try to understand **why materials behave the way they do—and use that understanding to predict what happens next.**
 
-<p>
-  For a more detailed description of our research directions, please visit
-  the <a href="{{ '/research/' | relative_url }}">Research</a> page.
+<p>For a more detailed description of our research directions, please visit the <a href="{{ '/research/' | relative_url }}">Research</a> page.
 </p>
 ---
 
