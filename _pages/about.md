@@ -276,12 +276,12 @@ latest_posts:
     /*
      * Mesh density
      */
-    spacing: 45,
+    spacing: 35,
 
     /*
      * Size of cursor influence
      */
-    influenceRadius: 180,
+    influenceRadius: 220,
 
     /*
      * Amount of deformation
@@ -291,7 +291,7 @@ latest_posts:
     /*
      * Relaxation speed
      */
-    relaxation: 0.065,
+    relaxation: 0.08,
 
     /*
      * Mesh line visibility
