@@ -4,56 +4,120 @@
   }
 </style> <link rel="stylesheet" href="/acmg-lab/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/acmg-lab/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="/acmg-lab/assets/img/favicon.png?v=aa5b18e5205334f27de737a5bd44e3b6"> <link rel="apple-touch-icon" href="/acmg-lab/assets/img/favicon.png?v=aa5b18e5205334f27de737a5bd44e3b6"> <link rel="stylesheet" href="/acmg-lab/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://mayankchouksey.github.io/acmg-lab/"> <script src="/acmg-lab/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/acmg-lab/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
     initTheme();
-  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item active"> <a class="nav-link" href="/acmg-lab/">ACMG <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/acmg-lab/people/">team </a> </li> <li class="nav-item "> <a class="nav-link" href="/acmg-lab/research/">research </a> </li> <li class="nav-item "> <a class="nav-link" href="/acmg-lab/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/acmg-lab/research-output/">research output </a> </li> <li class="nav-item "> <a class="nav-link" href="/acmg-lab/teaching/">teaching </a> </li> <li class="nav-item "> <a class="nav-link" href="/acmg-lab/opportunities/">opportunities </a> </li> <li class="nav-item "> <a class="nav-link" href="/acmg-lab/contact/">contact </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title"> ACMG </h1> <p class="desc"></p> </header> <article> <div class="clearfix"> <canvas id="acmg-mesh-background"></canvas> <style>
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item active"> <a class="nav-link" href="/acmg-lab/">ACMG <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/acmg-lab/people/">team </a> </li> <li class="nav-item "> <a class="nav-link" href="/acmg-lab/research/">research </a> </li> <li class="nav-item "> <a class="nav-link" href="/acmg-lab/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/acmg-lab/research-output/">research output </a> </li> <li class="nav-item "> <a class="nav-link" href="/acmg-lab/teaching/">teaching </a> </li> <li class="nav-item "> <a class="nav-link" href="/acmg-lab/opportunities/">opportunities </a> </li> <li class="nav-item "> <a class="nav-link" href="/acmg-lab/contact/">contact </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title"> ACMG </h1> <p class="desc"></p> </header> <article> <div class="clearfix"> <section class="acmg-header"> <canvas id="acmg-mesh"></canvas> <div class="acmg-header-content"> <h1>Applied Computational Mechanics Group</h1> <h2> Department of Mechanical Engineering </h2> <h2> Indian Institute of Technology Indore </h2> </div> </section> <style>
 
-#acmg-mesh-background {
-  position: fixed;
+/* =========================================================
+   ACMG HEADER
+   ========================================================= */
+
+.acmg-header {
+  position: relative;
+
+  width: 100%;
+  min-height: 300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   CANVAS
+   ========================================================= */
+
+#acmg-mesh {
+  position: absolute;
+
   top: 0;
   left: 0;
 
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 
   z-index: 0;
 
   pointer-events: none;
-
-  background: transparent;
 }
 
 
-/*
- * Keep the actual webpage content above
- * the animated mesh.
- */
+/* =========================================================
+   HEADER TEXT
+   ========================================================= */
 
-main,
-.page,
-.post,
-.post-content,
-.container {
+.acmg-header-content {
   position: relative;
-  z-index: 1;
+
+  z-index: 2;
+
+  width: 100%;
+
+  padding: 55px 20px;
+
+  text-align: center;
 }
 
 
-/*
- * Very subtle mesh.
- */
+.acmg-header-content h1 {
+  margin: 0 0 8px 0;
 
-#acmg-mesh-background {
-  opacity: 0.75;
+  font-size: 2.4rem;
+
+  font-weight: 400;
+
+  line-height: 1.2;
 }
 
 
-/*
- * Disable animation for users who
- * prefer reduced motion.
- */
+.acmg-header-content h2 {
+  margin: 4px 0;
+
+  font-size: 1.6rem;
+
+  font-weight: 400;
+
+  line-height: 1.35;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .acmg-header {
+    min-height: 260px;
+  }
+
+  .acmg-header-content {
+    padding: 45px 15px;
+  }
+
+  .acmg-header-content h1 {
+    font-size: 1.9rem;
+  }
+
+  .acmg-header-content h2 {
+    font-size: 1.15rem;
+  }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
 
 @media (prefers-reduced-motion: reduce) {
 
-  #acmg-mesh-background {
+  #acmg-mesh {
     display: none;
   }
 
@@ -64,12 +128,13 @@ main,
 (function () {
 
   const canvas =
-    document.getElementById("acmg-mesh-background");
+    document.getElementById("acmg-mesh");
 
   if (!canvas) return;
 
   const ctx =
     canvas.getContext("2d");
+
 
   let width = 0;
   let height = 0;
@@ -79,75 +144,47 @@ main,
   let columns = 0;
   let rows = 0;
 
-  let spacing = 60;
-
 
   /*
-   * Mouse position
+   * ========================================================
+   * MESH PARAMETERS
+   * ========================================================
+   *
+   * These are the values you selected.
    */
 
-  const mouse = {
+  const settings = {
 
-    x: -1000,
-    y: -1000,
+    spacing: 45,
 
-    active: false
+    influenceRadius: 180,
+
+    deformation: 55,
+
+    relaxation: 0.065,
+
+    lineColor:
+      "rgba(110, 110, 110, 0.20)",
+
+    pointColor:
+      "rgba(110, 110, 110, 0.18)",
+
+    lineWidth: 0.7
 
   };
 
 
   /*
-   * Animation parameters
+   * Mouse
    */
 
-  const settings = {
+  const mouse = {
 
-    /*
-     * Distance between mesh nodes.
-     *
-     * Increase to make mesh less dense.
-     */
-    spacing: 45,
+    x: -1000,
 
+    y: -1000,
 
-    /*
-     * Radius around cursor
-     * affected by deformation.
-     */
-    influenceRadius: 180,
-
-
-    /*
-     * Maximum displacement.
-     */
-    deformation: 55,
-
-
-    /*
-     * How quickly the mesh
-     * returns to its original position.
-     */
-    relaxation: 0.065,
-
-
-    /*
-     * Very light gray lines.
-     */
-    lineColor:
-      "rgba(110, 110, 110, 0.20)",
-
-
-    /*
-     * Extremely subtle nodes.
-     */
-    pointColor:
-      "rgba(110, 110, 110, 0.18)",
-
-
-    /*
-     * Thin lines.
-     */
-    lineWidth: 0.65
+    active: false
 
   };
 
@@ -162,35 +199,29 @@ main,
 
     points = [];
 
-    spacing = settings.spacing;
-
     columns =
-      Math.ceil(width / spacing) + 1;
+      Math.ceil(width / settings.spacing) + 1;
 
     rows =
-      Math.ceil(height / spacing) + 1;
+      Math.ceil(height / settings.spacing) + 1;
 
 
     for (let j = 0; j < rows; j++) {
 
       for (let i = 0; i < columns; i++) {
 
-        const x = i * spacing;
-        const y = j * spacing;
+        const x =
+          i * settings.spacing;
+
+        const y =
+          j * settings.spacing;
 
 
         points.push({
 
-          /*
-           * Original position
-           */
           ox: x,
           oy: y,
 
-
-          /*
-           * Current position
-           */
           x: x,
           y: y
 
@@ -211,11 +242,15 @@ main,
 
   function resizeCanvas() {
 
+    const rect =
+      canvas.getBoundingClientRect();
+
+
     width =
-      window.innerWidth;
+      rect.width;
 
     height =
-      window.innerHeight;
+      rect.height;
 
 
     const dpr =
@@ -230,13 +265,6 @@ main,
 
     canvas.height =
       height * dpr;
-
-
-    canvas.style.width =
-      width + "px";
-
-    canvas.style.height =
-      height + "px";
 
 
     ctx.setTransform(
@@ -256,19 +284,23 @@ main,
 
   /*
    * ========================================================
-   * TRACK MOUSE
+   * MOUSE
    * ========================================================
    */
 
-  document.addEventListener(
+  canvas.parentElement.addEventListener(
     "mousemove",
     function (event) {
 
+      const rect =
+        canvas.getBoundingClientRect();
+
+
       mouse.x =
-        event.clientX;
+        event.clientX - rect.left;
 
       mouse.y =
-        event.clientY;
+        event.clientY - rect.top;
 
       mouse.active =
         true;
@@ -277,12 +309,7 @@ main,
   );
 
 
-  /*
-   * Stop deformation when
-   * pointer leaves the browser.
-   */
-
-  document.addEventListener(
+  canvas.parentElement.addEventListener(
     "mouseleave",
     function () {
 
@@ -295,7 +322,7 @@ main,
 
   /*
    * ========================================================
-   * DEFORM EACH NODE
+   * DEFORM POINT
    * ========================================================
    */
 
@@ -329,13 +356,6 @@ main,
         settings.influenceRadius
       ) {
 
-        /*
-         * Smooth influence:
-         *
-         * 1.0 near cursor
-         * 0.0 at influence boundary
-         */
-
         const normalized =
           1 -
           distance /
@@ -349,11 +369,6 @@ main,
 
 
         if (distance > 0) {
-
-          /*
-           * Push the material
-           * away from cursor.
-           */
 
           targetX +=
             (dx / distance) *
@@ -374,7 +389,8 @@ main,
 
 
     /*
-     * Smooth relaxation.
+     * Return smoothly to
+     * undeformed configuration.
      */
 
     point.x +=
@@ -406,7 +422,7 @@ main,
 
 
     /*
-     * Update points.
+     * Update points
      */
 
     for (
@@ -423,7 +439,7 @@ main,
 
 
     /*
-     * Line settings.
+     * Line appearance
      */
 
     ctx.lineWidth =
@@ -434,9 +450,7 @@ main,
 
 
     /*
-     * ======================================================
-     * HORIZONTAL LINES
-     * ======================================================
+     * Horizontal lines
      */
 
     for (
@@ -456,6 +470,7 @@ main,
 
         const index =
           j * columns + i;
+
 
         const point =
           points[index];
@@ -486,9 +501,7 @@ main,
 
 
     /*
-     * ======================================================
-     * VERTICAL LINES
-     * ======================================================
+     * Vertical lines
      */
 
     for (
@@ -508,6 +521,7 @@ main,
 
         const index =
           j * columns + i;
+
 
         const point =
           points[index];
@@ -538,9 +552,7 @@ main,
 
 
     /*
-     * ======================================================
-     * SUBTLE NODES
-     * ======================================================
+     * Nodes
      */
 
     ctx.fillStyle =
@@ -574,10 +586,6 @@ main,
     }
 
 
-    /*
-     * Continue animation.
-     */
-
     requestAnimationFrame(
       drawMesh
     );
@@ -586,9 +594,7 @@ main,
 
 
   /*
-   * ========================================================
    * START
-   * ========================================================
    */
 
   window.addEventListener(
@@ -604,7 +610,7 @@ main,
 
 })();
 
-</script> <div style="text-align: center; margin-bottom: 30px;"> <h1 style="margin-bottom: 8px;">Applied Computational Mechanics Group</h1> <h2 style="font-size: 1.6rem; margin: 4px 0; font-weight: 400;"> Department of Mechanical Engineering </h2> <h2 style="font-size: 1.6rem; margin: 4px 0 25px; font-weight: 400;"> Indian Institute of Technology Indore </h2> </div> <div style="text-align: center; margin: 20px 0 40px;"> <img src="/acmg-lab/assets/img/6.jpg" style="width: 100%; max-width: 1100px; border-radius: 6px;" alt="Applied Computational Mechanics Group"> </div> <hr> <h3 id="computational-mechanics-of-materials">Computational Mechanics of Materials</h3> <p>The <strong>Applied Computational Mechanics Group (ACMG)</strong> at the Department of Mechanical Engineering, Indian Institute of Technology Indore, focuses on understanding and predicting the mechanical response of materials through computational mechanics, micromechanics, and numerical modelling.</p> <p>Our research spans <strong>deformation, plasticity, damage, fracture, and failure of materials</strong> under a wide range of loading and environmental conditions.</p> <hr> <h2 id="research-areas">Research Areas</h2> <ul> <li><strong>Micromechanics and Homogenization</strong></li> <li><strong>Plasticity and Constitutive Modelling</strong></li> <li><strong>Damage and Fracture Mechanics</strong></li> <li><strong>Dynamic and Extreme Loading</strong></li> <li><strong>Crystal Plasticity and Deformation Mechanisms</strong></li> <li><strong>Electro-chemo-mechanical Modelling of Materials</strong></li> </ul> <hr> <h2 id="research-philosophy">Research Philosophy</h2> <p>We develop computational frameworks that connect <strong>material behaviour across length and time scales</strong>, from microscale mechanisms to macroscopic response, with emphasis on physically motivated modelling and robust numerical methods.</p> <hr> <style>
+</script> <div style="text-align: center; margin-bottom: 30px;"> <h1 style="margin-bottom: 8px;">Applied Computational Mechanics Group</h1> <h2 style="font-size: 1.6rem; margin: 4px 0; font-weight: 400;"> Department of Mechanical Engineering </h2> <h2 style="font-size: 1.6rem; margin: 4px 0 25px; font-weight: 400;"> Indian Institute of Technology Indore </h2> </div> <div style="text-align: center; margin: 20px 0 40px;"> <img src="/acmg-lab/assets/img/6.jpg" style="width: 100%; max-width: 1100px; border-radius: 6px;" alt="Applied Computational Mechanics Group"> </div> <p style="text-align: center; font-size: 1.15rem; margin: 0 0 35px 0;"> Welcome to the Applied Computational Mechanics Group (ACMG) at the Indian Institute of Technology Indore. </p> <hr> <h3 id="computational-mechanics-of-materials">Computational Mechanics of Materials</h3> <p>The <strong>Applied Computational Mechanics Group (ACMG)</strong> at the Department of Mechanical Engineering, Indian Institute of Technology Indore, focuses on understanding and predicting the mechanical response of materials through computational mechanics, micromechanics, and numerical modelling.</p> <p>Our research spans <strong>deformation, plasticity, damage, fracture, and failure of materials</strong> under a wide range of loading and environmental conditions.</p> <hr> <h2 id="research-areas">Research Areas</h2> <ul> <li><strong>Micromechanics and Homogenization</strong></li> <li><strong>Plasticity and Constitutive Modelling</strong></li> <li><strong>Damage and Fracture Mechanics</strong></li> <li><strong>Dynamic and Extreme Loading</strong></li> <li><strong>Crystal Plasticity and Deformation Mechanisms</strong></li> <li><strong>Electro-chemo-mechanical Modelling of Materials</strong></li> </ul> <hr> <h2 id="research-philosophy">Research Philosophy</h2> <p>We develop computational frameworks that connect <strong>material behaviour across length and time scales</strong>, from microscale mechanisms to macroscopic response, with emphasis on physically motivated modelling and robust numerical methods.</p> <hr> <style>
 .post-title {
   display: none !important;
 }
