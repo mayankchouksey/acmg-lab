@@ -134,12 +134,14 @@ latest_posts:
 }
 
 /* Department + Institute */
+/* <h2 style="font-size: 1.6rem; margin: 4px 0 25px; font-weight: 400;"> */
 
+  
 .acmg-header-content h2 {
   margin: 8px 0;
 
-  font-size: 1.35rem;
-  font-weight: 450;
+  font-size: 1.45rem;
+  font-weight: 400;
   line-height: 1.4;
 
   color: rgba(35, 35, 35, 0.90);
@@ -397,33 +399,25 @@ latest_posts:
 
   }
 
-
-  canvas.addEventListener("mousemove", function (event) {
-
-    const rect =
-      canvas.getBoundingClientRect();
-
-    mouse.x =
-      event.clientX - rect.left;
-
-    mouse.y =
-      event.clientY - rect.top;
-
-  });
+const header = document.querySelector(".acmg-header");
+header.addEventListener("mousemove", function (event) {
+  const rect =
+    canvas.getBoundingClientRect();
+  mouse.x =
+    event.clientX - rect.left;
+  mouse.y =
+    event.clientY - rect.top;
+});
 
 
-  canvas.addEventListener("mouseleave", function () {
-
-    mouse.x = null;
-    mouse.y = null;
-
-  });
+header.addEventListener("mouseleave", function () {
+  mouse.x = null;
+  mouse.y = null;
+});
 
 
   window.addEventListener("resize", resize);
-
   resize();
-
   animate();
 
 })();
