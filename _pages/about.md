@@ -458,21 +458,33 @@ Our research spans **deformation, plasticity, damage, fracture, and failure of m
 
 ---
 
-## Research Areas
+<h2>What We Do at ACMG</h2>
 
-- **Micromechanics and Homogenization**
-- **Plasticity and Constitutive Modelling**
-- **Damage and Fracture Mechanics**
-- **Dynamic and Extreme Loading**
-- **Crystal Plasticity and Deformation Mechanisms**
-- **Electro-chemo-mechanical Modelling of Materials**
+<p>
+  Materials respond differently when they are stretched, compressed, heated,
+  loaded quickly, or subjected to complex conditions. Understanding these
+  responses helps us predict when and how materials will deform, become
+  damaged, or eventually fail.
+</p>
 
----
+<p>
+  At ACMG, we use mechanics, mathematics, and computational methods to study
+  these behaviours. We look at what happens inside materials at small scales
+  and how these mechanisms influence their overall response. Our work covers
+  deformation, plasticity, damage, fracture, and failure, including behaviour
+  under dynamic loading and in advanced materials and energy-storage systems.
+</p>
 
-## Research Philosophy
+<p>
+  In simple terms, we try to understand
+  <strong>why materials behave the way they do—and use that understanding
+  to predict what happens next.</strong>
+</p>
 
-We develop computational frameworks that connect **material behaviour across length and time scales**, from microscale mechanisms to macroscopic response, with emphasis on physically motivated modelling and robust numerical methods.
-
+<p>
+  For a more detailed description of our research directions, please visit
+  the <a href="{{ '/research/' | relative_url }}">Research</a> page.
+</p>
 ---
 
 <!--
@@ -488,17 +500,6 @@ Indian Institute of Technology Indore
 </div>
 ---
 -->
-
-
-<!--
-## Group Leader
-
-**Dr. Mayank Chouksey**  
-Assistant Professor  
-Department of Mechanical Engineering  
-Indian Institute of Technology Indore
--->
-
 
 
 <style>
