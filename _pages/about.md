@@ -12,62 +12,146 @@ latest_posts:
 ---
 
 
+
 <!-- =========================================================
-     ACMG INTERACTIVE COMPUTATIONAL MECHANICS BACKGROUND
+     ACMG HEADER WITH INTERACTIVE MESH
      ========================================================= -->
 
-<canvas id="acmg-mesh-background"></canvas>
+<section class="acmg-header">
+
+  <canvas id="acmg-mesh"></canvas>
+
+  <div class="acmg-header-content">
+
+    <h1>Applied Computational Mechanics Group</h1>
+
+    <h2>
+      Department of Mechanical Engineering
+    </h2>
+
+    <h2>
+      Indian Institute of Technology Indore
+    </h2>
+
+  </div>
+
+</section>
+
 
 <style>
 
-#acmg-mesh-background {
-  position: fixed;
+/* =========================================================
+   ACMG HEADER
+   ========================================================= */
+
+.acmg-header {
+  position: relative;
+
+  width: 100%;
+  min-height: 300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   CANVAS
+   ========================================================= */
+
+#acmg-mesh {
+  position: absolute;
+
   top: 0;
   left: 0;
 
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 
   z-index: 0;
 
   pointer-events: none;
-
-  background: transparent;
 }
 
 
-/*
- * Keep the actual webpage content above
- * the animated mesh.
- */
+/* =========================================================
+   HEADER TEXT
+   ========================================================= */
 
-main,
-.page,
-.post,
-.post-content,
-.container {
+.acmg-header-content {
   position: relative;
-  z-index: 1;
+
+  z-index: 2;
+
+  width: 100%;
+
+  padding: 55px 20px;
+
+  text-align: center;
 }
 
 
-/*
- * Very subtle mesh.
- */
+.acmg-header-content h1 {
+  margin: 0 0 8px 0;
 
-#acmg-mesh-background {
-  opacity: 0.75;
+  font-size: 2.4rem;
+
+  font-weight: 400;
+
+  line-height: 1.2;
 }
 
 
-/*
- * Disable animation for users who
- * prefer reduced motion.
- */
+.acmg-header-content h2 {
+  margin: 4px 0;
+
+  font-size: 1.6rem;
+
+  font-weight: 400;
+
+  line-height: 1.35;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .acmg-header {
+    min-height: 260px;
+  }
+
+  .acmg-header-content {
+    padding: 45px 15px;
+  }
+
+  .acmg-header-content h1 {
+    font-size: 1.9rem;
+  }
+
+  .acmg-header-content h2 {
+    font-size: 1.15rem;
+  }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
 
 @media (prefers-reduced-motion: reduce) {
 
-  #acmg-mesh-background {
+  #acmg-mesh {
     display: none;
   }
 
@@ -81,12 +165,13 @@ main,
 (function () {
 
   const canvas =
-    document.getElementById("acmg-mesh-background");
+    document.getElementById("acmg-mesh");
 
   if (!canvas) return;
 
   const ctx =
     canvas.getContext("2d");
+
 
   let width = 0;
   let height = 0;
@@ -96,75 +181,47 @@ main,
   let columns = 0;
   let rows = 0;
 
-  let spacing = 60;
-
 
   /*
-   * Mouse position
+   * ========================================================
+   * MESH PARAMETERS
+   * ========================================================
+   *
+   * These are the values you selected.
    */
 
-  const mouse = {
+  const settings = {
 
-    x: -1000,
-    y: -1000,
+    spacing: 45,
 
-    active: false
+    influenceRadius: 180,
+
+    deformation: 55,
+
+    relaxation: 0.065,
+
+    lineColor:
+      "rgba(110, 110, 110, 0.20)",
+
+    pointColor:
+      "rgba(110, 110, 110, 0.18)",
+
+    lineWidth: 0.7
 
   };
 
 
   /*
-   * Animation parameters
+   * Mouse
    */
 
-  const settings = {
+  const mouse = {
 
-    /*
-     * Distance between mesh nodes.
-     *
-     * Increase to make mesh less dense.
-     */
-    spacing: 45,
+    x: -1000,
 
+    y: -1000,
 
-    /*
-     * Radius around cursor
-     * affected by deformation.
-     */
-    influenceRadius: 180,
-
-
-    /*
-     * Maximum displacement.
-     */
-    deformation: 55,
-
-
-    /*
-     * How quickly the mesh
-     * returns to its original position.
-     */
-    relaxation: 0.065,
-
-
-    /*
-     * Very light gray lines.
-     */
-    lineColor:
-      "rgba(110, 110, 110, 0.20)",
-
-
-    /*
-     * Extremely subtle nodes.
-     */
-    pointColor:
-      "rgba(110, 110, 110, 0.18)",
-
-
-    /*
-     * Thin lines.
-     */
-    lineWidth: 0.65
+    active: false
 
   };
 
@@ -179,35 +236,29 @@ main,
 
     points = [];
 
-    spacing = settings.spacing;
-
     columns =
-      Math.ceil(width / spacing) + 1;
+      Math.ceil(width / settings.spacing) + 1;
 
     rows =
-      Math.ceil(height / spacing) + 1;
+      Math.ceil(height / settings.spacing) + 1;
 
 
     for (let j = 0; j < rows; j++) {
 
       for (let i = 0; i < columns; i++) {
 
-        const x = i * spacing;
-        const y = j * spacing;
+        const x =
+          i * settings.spacing;
+
+        const y =
+          j * settings.spacing;
 
 
         points.push({
 
-          /*
-           * Original position
-           */
           ox: x,
           oy: y,
 
-
-          /*
-           * Current position
-           */
           x: x,
           y: y
 
@@ -228,11 +279,15 @@ main,
 
   function resizeCanvas() {
 
+    const rect =
+      canvas.getBoundingClientRect();
+
+
     width =
-      window.innerWidth;
+      rect.width;
 
     height =
-      window.innerHeight;
+      rect.height;
 
 
     const dpr =
@@ -247,13 +302,6 @@ main,
 
     canvas.height =
       height * dpr;
-
-
-    canvas.style.width =
-      width + "px";
-
-    canvas.style.height =
-      height + "px";
 
 
     ctx.setTransform(
@@ -273,19 +321,23 @@ main,
 
   /*
    * ========================================================
-   * TRACK MOUSE
+   * MOUSE
    * ========================================================
    */
 
-  document.addEventListener(
+  canvas.parentElement.addEventListener(
     "mousemove",
     function (event) {
 
+      const rect =
+        canvas.getBoundingClientRect();
+
+
       mouse.x =
-        event.clientX;
+        event.clientX - rect.left;
 
       mouse.y =
-        event.clientY;
+        event.clientY - rect.top;
 
       mouse.active =
         true;
@@ -294,12 +346,7 @@ main,
   );
 
 
-  /*
-   * Stop deformation when
-   * pointer leaves the browser.
-   */
-
-  document.addEventListener(
+  canvas.parentElement.addEventListener(
     "mouseleave",
     function () {
 
@@ -312,7 +359,7 @@ main,
 
   /*
    * ========================================================
-   * DEFORM EACH NODE
+   * DEFORM POINT
    * ========================================================
    */
 
@@ -346,13 +393,6 @@ main,
         settings.influenceRadius
       ) {
 
-        /*
-         * Smooth influence:
-         *
-         * 1.0 near cursor
-         * 0.0 at influence boundary
-         */
-
         const normalized =
           1 -
           distance /
@@ -366,11 +406,6 @@ main,
 
 
         if (distance > 0) {
-
-          /*
-           * Push the material
-           * away from cursor.
-           */
 
           targetX +=
             (dx / distance) *
@@ -391,7 +426,8 @@ main,
 
 
     /*
-     * Smooth relaxation.
+     * Return smoothly to
+     * undeformed configuration.
      */
 
     point.x +=
@@ -423,7 +459,7 @@ main,
 
 
     /*
-     * Update points.
+     * Update points
      */
 
     for (
@@ -440,7 +476,7 @@ main,
 
 
     /*
-     * Line settings.
+     * Line appearance
      */
 
     ctx.lineWidth =
@@ -451,9 +487,7 @@ main,
 
 
     /*
-     * ======================================================
-     * HORIZONTAL LINES
-     * ======================================================
+     * Horizontal lines
      */
 
     for (
@@ -473,6 +507,7 @@ main,
 
         const index =
           j * columns + i;
+
 
         const point =
           points[index];
@@ -503,9 +538,7 @@ main,
 
 
     /*
-     * ======================================================
-     * VERTICAL LINES
-     * ======================================================
+     * Vertical lines
      */
 
     for (
@@ -525,6 +558,7 @@ main,
 
         const index =
           j * columns + i;
+
 
         const point =
           points[index];
@@ -555,9 +589,7 @@ main,
 
 
     /*
-     * ======================================================
-     * SUBTLE NODES
-     * ======================================================
+     * Nodes
      */
 
     ctx.fillStyle =
@@ -591,10 +623,6 @@ main,
     }
 
 
-    /*
-     * Continue animation.
-     */
-
     requestAnimationFrame(
       drawMesh
     );
@@ -603,9 +631,7 @@ main,
 
 
   /*
-   * ========================================================
    * START
-   * ========================================================
    */
 
   window.addEventListener(
@@ -622,6 +648,7 @@ main,
 })();
 
 </script>
+
 
 
 
@@ -654,6 +681,12 @@ Indian Institute of Technology Indore
      alt="Applied Computational Mechanics Group">
 
 </div>
+
+<p style="text-align: center; font-size: 1.15rem; margin: 0 0 35px 0;">
+  Welcome to the Applied Computational Mechanics Group (ACMG)
+  at the Indian Institute of Technology Indore.
+</p>
+
 ---
 
 ### Computational Mechanics of Materials
