@@ -311,6 +311,18 @@ latest_posts:
 
 }
 
+
+
+  .acmg-header-content h2 a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .acmg-header-content h2 a:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }  
+
 </style>
 
 
