@@ -22,7 +22,7 @@ latest_posts:
     <h1>Applied Computational Mechanics Group</h1>
 
     <h2>
-      <a href="https://me.iiti.ac.in/" target="_blank" rel="noopener">
+      <a href="https://meche.iiti.ac.in/" target="_blank" rel="noopener">
         Department of Mechanical Engineering
       </a>
     </h2>
