@@ -106,15 +106,10 @@ latest_posts:
 .acmg-header-content {
   position: relative;
   z-index: 2;
-
   text-align: center;
-
-  background: rgba(255, 255, 255, 0.68);
-
+  background: rgba(255, 255, 255, 0.32);
   padding: 28px 45px 25px;
-
   border-radius: 4px;
-
   width: fit-content;
   max-width: 90%;
 
