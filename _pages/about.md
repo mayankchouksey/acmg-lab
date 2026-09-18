@@ -107,7 +107,7 @@ latest_posts:
   position: relative;
   z-index: 2;
   text-align: center;
-  background: rgba(255, 255, 255, 0.32);
+  background: rgba(255, 255, 255, 0.25);
   padding: 28px 45px 25px;
   border-radius: 4px;
   width: fit-content;
@@ -475,21 +475,20 @@ We develop computational frameworks that connect **material behaviour across len
 
 ---
 
+<!--
 
 <div style="text-align: center; margin-bottom: 30px;">
-
 <h1 style="margin-bottom: 8px;">Applied Computational Mechanics Group</h1>
-
 <h2 style="font-size: 1.6rem; margin: 4px 0; font-weight: 400;">
 Department of Mechanical Engineering
 </h2>
-
 <h2 style="font-size: 1.6rem; margin: 4px 0 25px; font-weight: 400;">
 Indian Institute of Technology Indore
 </h2>
-
 </div>
 ---
+-->
+
 
 <!--
 ## Group Leader
