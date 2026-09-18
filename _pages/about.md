@@ -12,26 +12,23 @@ latest_posts:
 ---
 
 
-
 <!-- =========================================================
-     ACMG HEADER WITH INTERACTIVE MESH
+     ACMG ANIMATED HEADER
      ========================================================= -->
 
 <section class="acmg-header">
 
-  <canvas id="acmg-mesh"></canvas>
+  <div class="acmg-mesh-container">
+    <canvas id="acmg-mesh"></canvas>
+  </div>
 
   <div class="acmg-header-content">
 
     <h1>Applied Computational Mechanics Group</h1>
 
-    <h2>
-      Department of Mechanical Engineering
-    </h2>
+    <h2>Department of Mechanical Engineering</h2>
 
-    <h2>
-      Indian Institute of Technology Indore
-    </h2>
+    <h2>Indian Institute of Technology Indore</h2>
 
   </div>
 
@@ -41,24 +38,96 @@ latest_posts:
 <style>
 
 /* =========================================================
-   ACMG HEADER
+   HEADER
    ========================================================= */
 
 .acmg-header {
+
   position: relative;
 
-  width: 100%;
-  min-height: 300px;
+  width: 100vw;
+
+  /*
+   * Pull the header outside the normal
+   * al-folio content width.
+   */
+  left: 50%;
+  transform: translateX(-50%);
+
+  /*
+   * Increase header height.
+   */
+  height: 430px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
+  background: transparent;
+
+  /*
+   * Allows the mesh to extend slightly
+   * behind the navbar and into the photo.
+   */
+  overflow: visible;
+
+  margin: 0;
+
+  z-index: 1;
+}
+
+
+/* =========================================================
+   MESH CONTAINER
+   ========================================================= */
+
+.acmg-mesh-container {
+
+  position: absolute;
+
+  left: 0;
+
+  /*
+   * Extend upward so the mesh appears
+   * to continue behind the navbar.
+   */
+  top: -90px;
+
+  /*
+   * Extend downward so it disappears
+   * naturally underneath the photograph.
+   */
+  width: 100%;
+
+  height: calc(100% + 180px);
+
+  z-index: 0;
+
   overflow: hidden;
 
-  background: #ffffff;
+  pointer-events: none;
 
-  margin-bottom: 20px;
+  /*
+   * Soft fading at the top and bottom.
+   * This removes sharp horizontal edges.
+   */
+  -webkit-mask-image:
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      black 12%,
+      black 88%,
+      transparent 100%
+    );
+
+  mask-image:
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      black 12%,
+      black 88%,
+      transparent 100%
+    );
 }
 
 
@@ -67,6 +136,7 @@ latest_posts:
    ========================================================= */
 
 #acmg-mesh {
+
   position: absolute;
 
   top: 0;
@@ -75,9 +145,8 @@ latest_posts:
   width: 100%;
   height: 100%;
 
-  z-index: 0;
+  display: block;
 
-  pointer-events: none;
 }
 
 
@@ -86,37 +155,43 @@ latest_posts:
    ========================================================= */
 
 .acmg-header-content {
+
   position: relative;
 
   z-index: 2;
 
   width: 100%;
 
-  padding: 55px 20px;
+  padding: 40px 20px;
 
   text-align: center;
+
 }
 
 
 .acmg-header-content h1 {
-  margin: 0 0 8px 0;
 
-  font-size: 2.4rem;
+  margin: 0 0 18px 0;
+
+  font-size: 3.0rem;
 
   font-weight: 400;
 
   line-height: 1.2;
+
 }
 
 
 .acmg-header-content h2 {
-  margin: 4px 0;
 
-  font-size: 1.6rem;
+  margin: 6px 0;
+
+  font-size: 1.65rem;
 
   font-weight: 400;
 
   line-height: 1.35;
+
 }
 
 
@@ -127,19 +202,27 @@ latest_posts:
 @media (max-width: 600px) {
 
   .acmg-header {
-    min-height: 260px;
+
+    height: 350px;
+
   }
 
   .acmg-header-content {
-    padding: 45px 15px;
+
+    padding: 30px 15px;
+
   }
 
   .acmg-header-content h1 {
-    font-size: 1.9rem;
+
+    font-size: 2.0rem;
+
   }
 
   .acmg-header-content h2 {
+
     font-size: 1.15rem;
+
   }
 
 }
@@ -151,8 +234,10 @@ latest_posts:
 
 @media (prefers-reduced-motion: reduce) {
 
-  #acmg-mesh {
+  .acmg-mesh-container {
+
     display: none;
+
   }
 
 }
@@ -182,38 +267,55 @@ latest_posts:
   let rows = 0;
 
 
-  /*
-   * ========================================================
-   * MESH PARAMETERS
-   * ========================================================
-   *
-   * These are the values you selected.
-   */
+  /* =======================================================
+     MESH SETTINGS
+     ======================================================= */
 
   const settings = {
 
+    /*
+     * Mesh density
+     */
     spacing: 45,
 
+    /*
+     * Size of cursor influence
+     */
     influenceRadius: 180,
 
+    /*
+     * Amount of deformation
+     */
     deformation: 55,
 
+    /*
+     * Relaxation speed
+     */
     relaxation: 0.065,
 
+    /*
+     * Mesh line visibility
+     */
     lineColor:
       "rgba(110, 110, 110, 0.20)",
 
+    /*
+     * Node visibility
+     */
     pointColor:
       "rgba(110, 110, 110, 0.18)",
 
+    /*
+     * Line thickness
+     */
     lineWidth: 0.7
 
   };
 
 
-  /*
-   * Mouse
-   */
+  /* =======================================================
+     MOUSE
+     ======================================================= */
 
   const mouse = {
 
@@ -226,11 +328,9 @@ latest_posts:
   };
 
 
-  /*
-   * ========================================================
-   * CREATE MESH
-   * ========================================================
-   */
+  /* =======================================================
+     CREATE MESH
+     ======================================================= */
 
   function createMesh() {
 
@@ -271,11 +371,9 @@ latest_posts:
   }
 
 
-  /*
-   * ========================================================
-   * RESIZE
-   * ========================================================
-   */
+  /* =======================================================
+     RESIZE
+     ======================================================= */
 
   function resizeCanvas() {
 
@@ -319,13 +417,11 @@ latest_posts:
   }
 
 
-  /*
-   * ========================================================
-   * MOUSE
-   * ========================================================
-   */
+  /* =======================================================
+     MOUSE MOVEMENT
+     ======================================================= */
 
-  canvas.parentElement.addEventListener(
+  canvas.parentElement.parentElement.addEventListener(
     "mousemove",
     function (event) {
 
@@ -339,29 +435,26 @@ latest_posts:
       mouse.y =
         event.clientY - rect.top;
 
-      mouse.active =
-        true;
+
+      mouse.active = true;
 
     }
   );
 
 
-  canvas.parentElement.addEventListener(
+  canvas.parentElement.parentElement.addEventListener(
     "mouseleave",
     function () {
 
-      mouse.active =
-        false;
+      mouse.active = false;
 
     }
   );
 
 
-  /*
-   * ========================================================
-   * DEFORM POINT
-   * ========================================================
-   */
+  /* =======================================================
+     DEFORM POINT
+     ======================================================= */
 
   function deformPoint(point) {
 
@@ -425,11 +518,6 @@ latest_posts:
     }
 
 
-    /*
-     * Return smoothly to
-     * undeformed configuration.
-     */
-
     point.x +=
       (targetX - point.x) *
       settings.relaxation;
@@ -442,11 +530,9 @@ latest_posts:
   }
 
 
-  /*
-   * ========================================================
-   * DRAW MESH
-   * ========================================================
-   */
+  /* =======================================================
+     DRAW
+     ======================================================= */
 
   function drawMesh() {
 
@@ -457,10 +543,6 @@ latest_posts:
       height
     );
 
-
-    /*
-     * Update points
-     */
 
     for (
       let i = 0;
@@ -475,10 +557,6 @@ latest_posts:
     }
 
 
-    /*
-     * Line appearance
-     */
-
     ctx.lineWidth =
       settings.lineWidth;
 
@@ -486,9 +564,7 @@ latest_posts:
       settings.lineColor;
 
 
-    /*
-     * Horizontal lines
-     */
+    /* Horizontal lines */
 
     for (
       let j = 0;
@@ -505,12 +581,10 @@ latest_posts:
         i++
       ) {
 
-        const index =
-          j * columns + i;
-
-
         const point =
-          points[index];
+          points[
+            j * columns + i
+          ];
 
 
         if (i === 0) {
@@ -537,9 +611,7 @@ latest_posts:
     }
 
 
-    /*
-     * Vertical lines
-     */
+    /* Vertical lines */
 
     for (
       let i = 0;
@@ -556,12 +628,10 @@ latest_posts:
         j++
       ) {
 
-        const index =
-          j * columns + i;
-
-
         const point =
-          points[index];
+          points[
+            j * columns + i
+          ];
 
 
         if (j === 0) {
@@ -588,9 +658,7 @@ latest_posts:
     }
 
 
-    /*
-     * Nodes
-     */
+    /* Nodes */
 
     ctx.fillStyle =
       settings.pointColor;
@@ -630,9 +698,9 @@ latest_posts:
   }
 
 
-  /*
-   * START
-   */
+  /* =======================================================
+     START
+     ======================================================= */
 
   window.addEventListener(
     "resize",
@@ -653,41 +721,25 @@ latest_posts:
 
 
 
-
-
-
-
-
-
-
-<div style="text-align: center; margin-bottom: 30px;">
-
-<h1 style="margin-bottom: 8px;">Applied Computational Mechanics Group</h1>
-
-<h2 style="font-size: 1.6rem; margin: 4px 0; font-weight: 400;">
-Department of Mechanical Engineering
-</h2>
-
-<h2 style="font-size: 1.6rem; margin: 4px 0 25px; font-weight: 400;">
-Indian Institute of Technology Indore
-</h2>
-
-</div>
-
 <div style="text-align: center; margin: 20px 0 40px;">
-
 <img src="{{ '/assets/img/6.jpg' | relative_url }}"
      style="width: 100%; max-width: 1100px; border-radius: 6px;"
      alt="Applied Computational Mechanics Group">
-
 </div>
 
-<p style="text-align: center; font-size: 1.15rem; margin: 0 0 35px 0;">
+<p style="
+  text-align: center; 
+  font-size: 1.35rem;
+  line-height: 1.6;
+  margin: 5px auto 40px;
+  max-width: 950px;
+  ">
   Welcome to the Applied Computational Mechanics Group (ACMG)
   at the Indian Institute of Technology Indore.
 </p>
 
 ---
+
 
 ### Computational Mechanics of Materials
 
@@ -714,6 +766,21 @@ We develop computational frameworks that connect **material behaviour across len
 
 ---
 
+
+<div style="text-align: center; margin-bottom: 30px;">
+
+<h1 style="margin-bottom: 8px;">Applied Computational Mechanics Group</h1>
+
+<h2 style="font-size: 1.6rem; margin: 4px 0; font-weight: 400;">
+Department of Mechanical Engineering
+</h2>
+
+<h2 style="font-size: 1.6rem; margin: 4px 0 25px; font-weight: 400;">
+Indian Institute of Technology Indore
+</h2>
+
+</div>
+---
 
 <!--
 ## Group Leader
