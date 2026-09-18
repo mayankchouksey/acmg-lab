@@ -140,8 +140,8 @@ latest_posts:
 .acmg-header-content h2 {
   margin: 8px 0;
 
-  font-size: 1.45rem;
-  font-weight: 400;
+  font-size: 1.6rem;
+  font-weight: 350;
   line-height: 1.4;
 
   color: rgba(35, 35, 35, 0.90);
@@ -447,14 +447,15 @@ header.addEventListener("mouseleave", function () {
   at the Indian Institute of Technology Indore.
 </p>
 
+
+<!--
 ---
-
-
 ### Computational Mechanics of Materials
 
 The **Applied Computational Mechanics Group (ACMG)** at the Department of Mechanical Engineering, Indian Institute of Technology Indore, focuses on understanding and predicting the mechanical response of materials through computational mechanics, micromechanics, and numerical modelling.
 
 Our research spans **deformation, plasticity, damage, fracture, and failure of materials** under a wide range of loading and environmental conditions.
+-->
 
 ---
 
