@@ -438,7 +438,7 @@ header.addEventListener("mouseleave", function () {
 
 <p style="
   text-align: center; 
-  font-size: 1.35rem;
+  font-size: 1.45rem;
   line-height: 1.6;
   margin: 5px auto 40px;
   max-width: 950px;
