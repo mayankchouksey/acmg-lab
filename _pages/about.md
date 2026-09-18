@@ -11,24 +11,37 @@ latest_posts:
   enabled: false
 ---
 
-
 <!-- =========================================================
-     ACMG ANIMATED HEADER
+     ACMG HOMEPAGE MICROSTRUCTURE HEADER
      ========================================================= -->
 
 <section class="acmg-header">
 
-  <div class="acmg-mesh-container">
-    <canvas id="acmg-mesh"></canvas>
+  <div class="acmg-microstructure-container">
+
+    <canvas id="acmg-microstructure"></canvas>
+
   </div>
+
 
   <div class="acmg-header-content">
 
-    <h1>Applied Computational Mechanics Group</h1>
+    <h1>
+      Applied Computational Mechanics Group
+    </h1>
 
-    <h2>Department of Mechanical Engineering</h2>
+  <h2>
+    <a href="https://me.iiti.ac.in/" target="_blank" rel="noopener">
+      Department of Mechanical Engineering
+    </a>
+  </h2>
 
-    <h2>Indian Institute of Technology Indore</h2>
+  <h2>
+    <a href="https://www.iiti.ac.in/" target="_blank" rel="noopener">
+      Indian Institute of Technology Indore
+    </a>
+  </h2>
+    <div class="acmg-header-line"></div>
 
   </div>
 
@@ -38,7 +51,7 @@ latest_posts:
 <style>
 
 /* =========================================================
-   HEADER
+   ACMG HEADER
    ========================================================= */
 
 .acmg-header {
@@ -48,75 +61,81 @@ latest_posts:
   width: 100vw;
 
   /*
-   * Pull the header outside the normal
+   * Extend the header to the complete
+   * browser width instead of the normal
    * al-folio content width.
    */
   left: 50%;
+
   transform: translateX(-50%);
 
   /*
-   * Increase header height.
+   * Header height.
    */
   height: 430px;
 
   display: flex;
+
   align-items: center;
+
   justify-content: center;
 
-  background: transparent;
-
-  /*
-   * Allows the mesh to extend slightly
-   * behind the navbar and into the photo.
-   */
-  overflow: visible;
+  background: #ffffff;
 
   margin: 0;
 
+  /*
+   * Allows the microstructure to extend
+   * beyond the header boundaries.
+   */
+  overflow: visible;
+
   z-index: 1;
+
 }
 
 
 /* =========================================================
-   MESH CONTAINER
+   MICROSTRUCTURE CONTAINER
    ========================================================= */
 
-.acmg-mesh-container {
+.acmg-microstructure-container {
 
   position: absolute;
 
   left: 0;
 
   /*
-   * Extend upward so the mesh appears
-   * to continue behind the navbar.
+   * Extend upward behind the navbar.
    */
-  top: -90px;
+  top: -140px;
 
   /*
-   * Extend downward so it disappears
-   * naturally underneath the photograph.
+   * Extend downward into the photograph.
    */
   width: 100%;
 
-  height: calc(100% + 180px);
-
-  z-index: 0;
+  height: calc(100% + 220px);
 
   overflow: hidden;
 
   pointer-events: none;
 
+  z-index: 0;
+
+
   /*
-   * Soft fading at the top and bottom.
-   * This removes sharp horizontal edges.
+   * Gradual disappearance at the top
+   * and bottom.
    */
   -webkit-mask-image:
     linear-gradient(
       to bottom,
       transparent 0%,
-      black 12%,
-      black 88%,
+      rgba(0, 0, 0, 0.10) 7%,
+      black 19%,
+      black 82%,
+      rgba(0, 0, 0, 0.55) 93%,
       transparent 100%
     );
 
@@ -124,10 +143,13 @@ latest_posts:
     linear-gradient(
       to bottom,
       transparent 0%,
-      black 12%,
-      black 88%,
+      rgba(0, 0, 0, 0.10) 7%,
+      black 19%,
+      black 82%,
+      rgba(0, 0, 0, 0.55) 93%,
       transparent 100%
     );
+
 }
 
 
@@ -135,14 +157,16 @@ latest_posts:
    CANVAS
    ========================================================= */
 
-#acmg-mesh {
+#acmg-microstructure {
 
   position: absolute;
 
   top: 0;
+
   left: 0;
 
   width: 100%;
+
   height: 100%;
 
   display: block;
@@ -169,28 +193,57 @@ latest_posts:
 }
 
 
+/*
+ * ACMG name
+ */
+
 .acmg-header-content h1 {
 
   margin: 0 0 18px 0;
 
-  font-size: 3.0rem;
+  font-size: 2.8rem;
 
-  font-weight: 400;
+  font-weight: 350;
 
   line-height: 1.2;
 
+  letter-spacing: -0.015em;
+
 }
 
+
+/*
+ * Department and institute
+ */
 
 .acmg-header-content h2 {
 
   margin: 6px 0;
 
-  font-size: 1.65rem;
+  font-size: 1.45rem;
 
-  font-weight: 400;
+  font-weight: 350;
 
   line-height: 1.35;
+
+}
+
+
+/* =========================================================
+   HORIZONTAL LINE
+   ========================================================= */
+
+.acmg-header-line {
+
+  width: 280px;
+
+  max-width: 45%;
+
+  margin: 22px auto 0;
+
+  border-top:
+    1px solid
+    rgba(80, 80, 80, 0.45);
 
 }
 
@@ -207,21 +260,37 @@ latest_posts:
 
   }
 
+
   .acmg-header-content {
 
     padding: 30px 15px;
 
   }
 
+
   .acmg-header-content h1 {
 
-    font-size: 2.0rem;
+    font-size: 2rem;
+
+    letter-spacing: -0.01em;
 
   }
+
 
   .acmg-header-content h2 {
 
     font-size: 1.15rem;
+
+  }
+
+
+  .acmg-header-line {
+
+    width: 200px;
+
+    max-width: 55%;
+
+    margin-top: 18px;
 
   }
 
@@ -234,7 +303,7 @@ latest_posts:
 
 @media (prefers-reduced-motion: reduce) {
 
-  .acmg-mesh-container {
+  .acmg-microstructure-container {
 
     display: none;
 
@@ -250,67 +319,22 @@ latest_posts:
 (function () {
 
   const canvas =
-    document.getElementById("acmg-mesh");
+    document.getElementById(
+      "acmg-microstructure"
+    );
 
   if (!canvas) return;
+
 
   const ctx =
     canvas.getContext("2d");
 
 
   let width = 0;
+
   let height = 0;
 
-  let points = [];
-
-  let columns = 0;
-  let rows = 0;
-
-
-  /* =======================================================
-     MESH SETTINGS
-     ======================================================= */
-
-  const settings = {
-
-    /*
-     * Mesh density
-     */
-    spacing: 35,
-
-    /*
-     * Size of cursor influence
-     */
-    influenceRadius: 220,
-
-    /*
-     * Amount of deformation
-     */
-    deformation: 55,
-
-    /*
-     * Relaxation speed
-     */
-    relaxation: 0.08,
-
-    /*
-     * Mesh line visibility
-     */
-    lineColor:
-      "rgba(110, 110, 110, 0.20)",
-
-    /*
-     * Node visibility
-     */
-    pointColor:
-      "rgba(110, 110, 110, 0.18)",
-
-    /*
-     * Line thickness
-     */
-    lineWidth: 0.7
-
-  };
+  let particles = [];
 
 
   /* =======================================================
@@ -329,37 +353,138 @@ latest_posts:
 
 
   /* =======================================================
-     CREATE MESH
+     MICROSTRUCTURE SETTINGS
      ======================================================= */
 
-  function createMesh() {
+  const settings = {
 
-    points = [];
+    /*
+     * Distance between material particles.
+     *
+     * 45 gives the relatively dense
+     * microstructure you selected.
+     */
+    spacing: 45,
 
-    columns =
-      Math.ceil(width / settings.spacing) + 1;
 
-    rows =
-      Math.ceil(height / settings.spacing) + 1;
+    /*
+     * Randomness of particle positions.
+     *
+     * Larger = more irregular material.
+     */
+    irregularity: 14,
 
 
-    for (let j = 0; j < rows; j++) {
+    /*
+     * Radius of cursor influence.
+     */
+    influenceRadius: 200,
 
-      for (let i = 0; i < columns; i++) {
+
+    /*
+     * Maximum deformation.
+     */
+    deformation: 55,
+
+
+    /*
+     * Return speed.
+     */
+    relaxation: 0.045,
+
+
+    /*
+     * Particle size.
+     */
+    particleRadius: 1.8,
+
+
+    /*
+     * Particle visibility.
+     */
+    particleColor:
+      "rgba(95, 95, 95, 0.28)",
+
+
+    /*
+     * Very subtle material connections.
+     */
+    connectionColor:
+      "rgba(95, 95, 95, 0.13)",
+
+
+    /*
+     * Connection thickness.
+     */
+    lineWidth: 0.6
+
+  };
+
+
+  /* =======================================================
+     CREATE MICROSTRUCTURE
+     ======================================================= */
+
+  function createParticles() {
+
+    particles = [];
+
+
+    const columns =
+      Math.ceil(
+        width /
+        settings.spacing
+      ) + 1;
+
+
+    const rows =
+      Math.ceil(
+        height /
+        settings.spacing
+      ) + 1;
+
+
+    for (
+      let j = 0;
+      j < rows;
+      j++
+    ) {
+
+      for (
+        let i = 0;
+        i < columns;
+        i++
+      ) {
 
         const x =
-          i * settings.spacing;
+          i *
+          settings.spacing +
+          (Math.random() - 0.5) *
+          settings.irregularity;
+
 
         const y =
-          j * settings.spacing;
+          j *
+          settings.spacing +
+          (Math.random() - 0.5) *
+          settings.irregularity;
 
 
-        points.push({
+        particles.push({
 
+          /*
+           * Original position
+           */
           ox: x,
+
           oy: y,
 
+
+          /*
+           * Current position
+           */
           x: x,
+
           y: y
 
         });
@@ -398,6 +523,7 @@ latest_posts:
     canvas.width =
       width * dpr;
 
+
     canvas.height =
       height * dpr;
 
@@ -412,7 +538,7 @@ latest_posts:
     );
 
 
-    createMesh();
+    createParticles();
 
   }
 
@@ -421,7 +547,7 @@ latest_posts:
      MOUSE MOVEMENT
      ======================================================= */
 
-  canvas.parentElement.parentElement.addEventListener(
+  document.addEventListener(
     "mousemove",
     function (event) {
 
@@ -430,10 +556,13 @@ latest_posts:
 
 
       mouse.x =
-        event.clientX - rect.left;
+        event.clientX -
+        rect.left;
+
 
       mouse.y =
-        event.clientY - rect.top;
+        event.clientY -
+        rect.top;
 
 
       mouse.active = true;
@@ -442,7 +571,12 @@ latest_posts:
   );
 
 
-  canvas.parentElement.parentElement.addEventListener(
+  /*
+   * Stop deformation when the
+   * cursor leaves the browser.
+   */
+
+  document.addEventListener(
     "mouseleave",
     function () {
 
@@ -453,25 +587,30 @@ latest_posts:
 
 
   /* =======================================================
-     DEFORM POINT
+     DEFORM PARTICLE
      ======================================================= */
 
-  function deformPoint(point) {
+  function deformParticle(
+    particle
+  ) {
 
     let targetX =
-      point.ox;
+      particle.ox;
 
     let targetY =
-      point.oy;
+      particle.oy;
 
 
     if (mouse.active) {
 
       const dx =
-        point.ox - mouse.x;
+        particle.ox -
+        mouse.x;
+
 
       const dy =
-        point.oy - mouse.y;
+        particle.oy -
+        mouse.y;
 
 
       const distance =
@@ -486,6 +625,9 @@ latest_posts:
         settings.influenceRadius
       ) {
 
+        /*
+         * Smooth influence.
+         */
         const normalized =
           1 -
           distance /
@@ -499,6 +641,11 @@ latest_posts:
 
 
         if (distance > 0) {
+
+          /*
+           * Push material away
+           * from cursor.
+           */
 
           targetX +=
             (dx / distance) *
@@ -518,23 +665,28 @@ latest_posts:
     }
 
 
-    point.x +=
-      (targetX - point.x) *
+    /*
+     * Smooth return to the
+     * undeformed configuration.
+     */
+
+    particle.x +=
+      (targetX - particle.x) *
       settings.relaxation;
 
 
-    point.y +=
-      (targetY - point.y) *
+    particle.y +=
+      (targetY - particle.y) *
       settings.relaxation;
 
   }
 
 
   /* =======================================================
-     DRAW
+     DRAW MICROSTRUCTURE
      ======================================================= */
 
-  function drawMesh() {
+  function drawMicrostructure() {
 
     ctx.clearRect(
       0,
@@ -544,143 +696,128 @@ latest_posts:
     );
 
 
+    /*
+     * Update all material particles.
+     */
+
     for (
       let i = 0;
-      i < points.length;
+      i < particles.length;
       i++
     ) {
 
-      deformPoint(
-        points[i]
+      deformParticle(
+        particles[i]
       );
 
     }
 
 
+    /* =====================================================
+       DRAW CONNECTIONS
+       ===================================================== */
+
+    ctx.strokeStyle =
+      settings.connectionColor;
+
+
     ctx.lineWidth =
       settings.lineWidth;
 
-    ctx.strokeStyle =
-      settings.lineColor;
-
-
-    /* Horizontal lines */
-
-    for (
-      let j = 0;
-      j < rows;
-      j++
-    ) {
-
-      ctx.beginPath();
-
-
-      for (
-        let i = 0;
-        i < columns;
-        i++
-      ) {
-
-        const point =
-          points[
-            j * columns + i
-          ];
-
-
-        if (i === 0) {
-
-          ctx.moveTo(
-            point.x,
-            point.y
-          );
-
-        } else {
-
-          ctx.lineTo(
-            point.x,
-            point.y
-          );
-
-        }
-
-      }
-
-
-      ctx.stroke();
-
-    }
-
-
-    /* Vertical lines */
 
     for (
       let i = 0;
-      i < columns;
+      i < particles.length;
       i++
     ) {
 
-      ctx.beginPath();
+      const p =
+        particles[i];
 
 
       for (
-        let j = 0;
-        j < rows;
+        let j = i + 1;
+        j < particles.length;
         j++
       ) {
 
-        const point =
-          points[
-            j * columns + i
-          ];
+        const q =
+          particles[j];
 
 
-        if (j === 0) {
+        const dx =
+          p.x - q.x;
+
+
+        const dy =
+          p.y - q.y;
+
+
+        const distance =
+          Math.sqrt(
+            dx * dx +
+            dy * dy
+          );
+
+
+        /*
+         * Connect nearby particles.
+         */
+
+        if (
+          distance <
+          settings.spacing * 1.28
+        ) {
+
+          ctx.beginPath();
+
 
           ctx.moveTo(
-            point.x,
-            point.y
+            p.x,
+            p.y
           );
 
-        } else {
 
           ctx.lineTo(
-            point.x,
-            point.y
+            q.x,
+            q.y
           );
+
+
+          ctx.stroke();
 
         }
 
       }
 
-
-      ctx.stroke();
-
     }
 
 
-    /* Nodes */
+    /* =====================================================
+       DRAW PARTICLES
+       ===================================================== */
 
     ctx.fillStyle =
-      settings.pointColor;
+      settings.particleColor;
 
 
     for (
       let i = 0;
-      i < points.length;
+      i < particles.length;
       i++
     ) {
 
-      const point =
-        points[i];
+      const p =
+        particles[i];
 
 
       ctx.beginPath();
 
 
       ctx.arc(
-        point.x,
-        point.y,
-        1.1,
+        p.x,
+        p.y,
+        settings.particleRadius,
         0,
         Math.PI * 2
       );
@@ -691,8 +828,12 @@ latest_posts:
     }
 
 
+    /*
+     * Continue animation.
+     */
+
     requestAnimationFrame(
-      drawMesh
+      drawMicrostructure
     );
 
   }
@@ -709,8 +850,7 @@ latest_posts:
 
 
   resizeCanvas();
-
-  drawMesh();
+  drawMicrostructure();
 
 
 })();
