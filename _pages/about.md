@@ -124,7 +124,7 @@ main,
      *
      * Increase to make mesh less dense.
      */
-    spacing: 60,
+    spacing: 45,
 
 
     /*
@@ -137,7 +137,7 @@ main,
     /*
      * Maximum displacement.
      */
-    deformation: 42,
+    deformation: 55,
 
 
     /*
@@ -151,14 +151,14 @@ main,
      * Very light gray lines.
      */
     lineColor:
-      "rgba(110, 110, 110, 0.13)",
+      "rgba(110, 110, 110, 0.20)",
 
 
     /*
      * Extremely subtle nodes.
      */
     pointColor:
-      "rgba(110, 110, 110, 0.12)",
+      "rgba(110, 110, 110, 0.18)",
 
 
     /*
