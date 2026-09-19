@@ -46,6 +46,7 @@ latest_posts:
        style="width: 100%; max-width: 1100px; border-radius: 6px;"
        alt="Applied Computational Mechanics Group">
 </div>
+---
 
 <!-- ==================================================
      WELCOME MESSAGE
@@ -55,6 +56,7 @@ latest_posts:
   Welcome to the Applied Computational Mechanics Group (ACMG)
   at the Indian Institute of Technology Indore.
 </p>
+---
 
 <!-- ==================================================
      WHAT WE DO AT ACMG
@@ -87,6 +89,7 @@ latest_posts:
   For a more detailed description of our research directions, please visit
   the <a href="{{ '/research/' | relative_url }}">Research</a> page.
 </p>
+---
 
 <!-- ==================================================
      NEWS & HIGHLIGHTS
