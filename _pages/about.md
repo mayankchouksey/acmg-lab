@@ -107,7 +107,7 @@ latest_posts:
   position: relative;
   z-index: 2;
   text-align: center;
-  background: rgba(255, 255, 255, 0.20);
+  background: rgba(255, 255, 255, 0.10);
   padding: 28px 45px 25px;
   border-radius: 4px;
   width: fit-content;
