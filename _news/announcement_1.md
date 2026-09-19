@@ -1,8 +1,11 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+title: "ACMG welcomes new members"
+date: 2026-07-22
+category: "Group News"
+image: ""
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+CMG welcomes new members to the group.
