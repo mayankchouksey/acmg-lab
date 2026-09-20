@@ -194,6 +194,22 @@ latest_posts:
 ---
 
 <!-- ==================================================
+     GROUP PHOTOGRAPH / RESEARCH HIGHLIGHTS IMAGE
+     ================================================== -->
+
+<div style="text-align: center; margin: 20px 0 40px;">
+  <img src="{{ '/assets/img/6.jpg' | relative_url }}"
+       style="width: 80%; max-width: 1100px; border-radius: 6px;"
+       alt="Applied Computational Mechanics Group">
+</div>
+
+<p>to meet all the ACMG group member, please visit
+the <a href="{{ '/team/' | relative_url }}">team</a> page.
+</p>
+---
+
+
+<!-- ==================================================
      NEWS & HIGHLIGHTS
      ================================================== -->
 
@@ -254,16 +270,6 @@ latest_posts:
 </p>
 
 
-
-<!-- ==================================================
-     GROUP PHOTOGRAPH / RESEARCH HIGHLIGHTS IMAGE
-     ================================================== -->
----
-<div style="text-align: center; margin: 20px 0 40px;">
-  <img src="{{ '/assets/img/6.jpg' | relative_url }}"
-       style="width: 80%; max-width: 1100px; border-radius: 6px;"
-       alt="Applied Computational Mechanics Group">
-</div>
 
 
 
