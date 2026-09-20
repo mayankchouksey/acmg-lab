@@ -326,7 +326,8 @@ latest_posts:
 .acmg-news-track {
   display: flex;
   flex-direction: column;
-  animation: acmg-news-scroll 28s linear infinite;
+  animation: acmg-news-scroll 20s linear infinite;
+  will-change: transform;
 }
 
 .acmg-news-item {
@@ -334,11 +335,16 @@ latest_posts:
   padding: 20px 35px;
   text-decoration: none !important;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(0, 0, 0, 0.025);
   transition: background 0.2s ease;
 }
 
+.acmg-news-item:nth-child(even) {
+  background: rgba(0, 0, 0, 0.065);
+}
+
 .acmg-news-item:hover {
-  background: rgba(0, 0, 0, 0.035);
+  background: rgba(0, 0, 0, 0.10);
 }
 
 .acmg-news-meta {
