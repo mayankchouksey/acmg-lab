@@ -62,7 +62,8 @@ latest_posts:
      WHAT WE DO AT ACMG
      ================================================== -->
 
-<h2>What We Do at ACMG</h2>
+<h2 class="acmg-section-title">What We Do at ACMG</h2>
+<!-- <h2>What We Do at ACMG</h2> -->
 
 <p>
   Materials respond differently when they are stretched, compressed, heated,
