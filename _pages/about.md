@@ -191,30 +191,22 @@ latest_posts:
   For a more detailed description of our research directions, please visit
   the <a href="{{ '/research/' | relative_url }}">Research</a> page.
 </p>
----
+<!-- --- -->
+
 
 <!-- ==================================================
      GROUP PHOTOGRAPH / RESEARCH HIGHLIGHTS IMAGE
      ================================================== -->
-
-<div style="text-align: center; margin: 20px 0 40px;">
-  <img src="{{ '/assets/img/6.jpg' | relative_url }}"
-       style="width: 100%; max-width: 1100px; border-radius: 6px;"
-       alt="Applied Computational Mechanics Group">
-</div>
 
 <div class="acmg-group-photo">
   <img src="{{ '/assets/img/6.jpg' | relative_url }}"
        alt="Applied Computational Mechanics Group">
 </div>
 
-<p>Meet the ACMG team on our <a href="{{ '/team/' | relative_url }}">team</a> page.</p>
-
-
-<p>to meet all the ACMG group member, please visit
-the <a href="{{ '/team/' | relative_url }}">team</a> page.
+<p>Meet the ACMG team on our 
+  <a href="{{ '/team/' | relative_url }}">team</a> page.
 </p>
----
+<!-- --- -->
 
 
 <!-- ==================================================
