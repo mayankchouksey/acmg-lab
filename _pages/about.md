@@ -38,13 +38,114 @@ latest_posts:
 </section>
 
 <!-- ==================================================
-     GROUP PHOTOGRAPH / RESEARCH HIGHLIGHTS IMAGE
+     RESEARCH VISUALS
      ================================================== -->
 
-<div style="text-align: center; margin: 20px 0 40px;">
-  <img src="{{ '/assets/img/6.jpg' | relative_url }}"
-       style="width: 100%; max-width: 1100px; border-radius: 6px;"
-       alt="Applied Computational Mechanics Group">
+<div class="acmg-research-slider">
+
+  <div class="acmg-research-slides">
+
+    <!-- Slide 1 -->
+    <div class="acmg-research-slide active">
+      <div class="acmg-research-image-wrap">
+        <img src="{{ '/assets/img/research/1.jpg' | relative_url }}"
+             alt="Research highlight 1">
+
+        <div class="acmg-research-overlay">
+          <div class="acmg-research-overlay-title">
+            Research Highlight
+          </div>
+        </div>
+      </div>
+
+      <div class="acmg-research-caption">
+        <p>
+          Short description of the research shown in this image.
+          This can be one or two lines describing the result or phenomenon.
+        </p>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="acmg-research-slide">
+      <div class="acmg-research-image-wrap">
+        <img src="{{ '/assets/img/research/2.jpg' | relative_url }}"
+             alt="Research highlight 2">
+
+        <div class="acmg-research-overlay">
+          <div class="acmg-research-overlay-title">
+            Research Highlight
+          </div>
+        </div>
+      </div>
+
+      <div class="acmg-research-caption">
+        <p>
+          Short description of the research shown in this image.
+          This can be one or two lines describing the result or phenomenon.
+        </p>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="acmg-research-slide">
+      <div class="acmg-research-image-wrap">
+        <img src="{{ '/assets/img/research/3.jpg' | relative_url }}"
+             alt="Research highlight 3">
+
+        <div class="acmg-research-overlay">
+          <div class="acmg-research-overlay-title">
+            Research Highlight
+          </div>
+        </div>
+      </div>
+
+      <div class="acmg-research-caption">
+        <p>
+          Short description of the research shown in this image.
+          This can be one or two lines describing the result or phenomenon.
+        </p>
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="acmg-research-slide">
+      <div class="acmg-research-image-wrap">
+        <img src="{{ '/assets/img/research/4.jpg' | relative_url }}"
+             alt="Research highlight 4">
+
+        <div class="acmg-research-overlay">
+          <div class="acmg-research-overlay-title">
+            Research Highlight
+          </div>
+        </div>
+      </div>
+
+      <div class="acmg-research-caption">
+        <p>
+          Short description of the research shown in this image.
+          This can be one or two lines describing the result or phenomenon.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="acmg-research-prev" type="button" aria-label="Previous">
+    &#10094;
+  </button>
+
+  <button class="acmg-research-next" type="button" aria-label="Next">
+    &#10095;
+  </button>
+
+  <div class="acmg-research-dots">
+    <button class="acmg-research-dot active" type="button" aria-label="Slide 1"></button>
+    <button class="acmg-research-dot" type="button" aria-label="Slide 2"></button>
+    <button class="acmg-research-dot" type="button" aria-label="Slide 3"></button>
+    <button class="acmg-research-dot" type="button" aria-label="Slide 4"></button>
+  </div>
+
 </div>
 ---
 
@@ -290,6 +391,165 @@ latest_posts:
 }
 
 /* --------------------------------------------------
+   Research Visual Slider
+   -------------------------------------------------- */
+
+.acmg-research-slider {
+  position: relative;
+  max-width: 1100px;
+  margin: 25px auto 45px;
+}
+
+.acmg-research-slides {
+  position: relative;
+}
+
+.acmg-research-slide {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.acmg-research-slide.active {
+  display: block;
+  opacity: 1;
+}
+
+.acmg-research-image-wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.acmg-research-image-wrap img {
+  display: block;
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+}
+
+.acmg-research-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  padding: 55px 25px 20px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(0, 0, 0, 0.60)
+  );
+}
+
+.acmg-research-overlay-title {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.acmg-research-caption {
+  text-align: center;
+  max-width: 850px;
+  margin: 14px auto 0;
+}
+
+.acmg-research-caption p {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: rgba(50, 50, 50, 0.85);
+}
+
+.acmg-research-prev,
+.acmg-research-next {
+  position: absolute;
+  top: 240px;
+  z-index: 3;
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.75);
+  color: rgba(40, 40, 40, 0.85);
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.acmg-research-prev {
+  left: 18px;
+}
+
+.acmg-research-next {
+  right: 18px;
+}
+
+.acmg-research-prev:hover,
+.acmg-research-next:hover {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.acmg-research-dots {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  margin-top: 15px;
+}
+
+.acmg-research-dot {
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: rgba(80, 80, 80, 0.28);
+  cursor: pointer;
+}
+
+.acmg-research-dot.active {
+  background: rgba(50, 50, 50, 0.75);
+}
+
+@media (max-width: 600px) {
+  .acmg-research-image-wrap img {
+    height: 300px;
+  }
+
+  .acmg-research-overlay {
+    padding: 45px 18px 15px;
+  }
+
+  .acmg-research-overlay-title {
+    font-size: 1.05rem;
+  }
+
+  .acmg-research-prev,
+  .acmg-research-next {
+    top: 150px;
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+
+  .acmg-research-prev {
+    left: 10px;
+  }
+
+  .acmg-research-next {
+    right: 10px;
+  }
+
+  .acmg-research-caption p {
+    font-size: 0.92rem;
+  }
+}
+
+  
+/* --------------------------------------------------
    Welcome message
    -------------------------------------------------- */
 
@@ -471,11 +731,17 @@ latest_posts:
 
 </style>
 
+
 <!-- ==================================================
-     ACMG MICROSTRUCTURE INTERACTION
+     SCRIPTS
      ================================================== -->
 
 <script>
+
+/* --------------------------------------------------
+   ACMG MICROSTRUCTURE INTERACTION
+   -------------------------------------------------- */
+  
 (function () {
   const canvas = document.getElementById("acmg-microstructure");
   if (!canvas) return;
@@ -631,4 +897,68 @@ latest_posts:
   resize();
   animate();
 })();
+
+/* --------------------------------------------------
+   Research Visual Slider
+   -------------------------------------------------- */
+
+(function () {
+  const slides = document.querySelectorAll(".acmg-research-slide");
+  const dots = document.querySelectorAll(".acmg-research-dot");
+  const prevButton = document.querySelector(".acmg-research-prev");
+  const nextButton = document.querySelector(".acmg-research-next");
+
+  if (!slides.length) return;
+
+  let currentSlide = 0;
+  let slideTimer;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle("active", i === index);
+    });
+
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === index);
+    });
+
+    currentSlide = index;
+  }
+
+  function nextSlide() {
+    showSlide((currentSlide + 1) % slides.length);
+  }
+
+  function previousSlide() {
+    showSlide(
+      (currentSlide - 1 + slides.length) % slides.length
+    );
+  }
+
+  function startSlider() {
+    clearInterval(slideTimer);
+    slideTimer = setInterval(nextSlide, 7000);
+  }
+
+  nextButton.addEventListener("click", function () {
+    nextSlide();
+    startSlider();
+  });
+
+  prevButton.addEventListener("click", function () {
+    previousSlide();
+    startSlider();
+  });
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", function () {
+      showSlide(index);
+      startSlider();
+    });
+  });
+
+  showSlide(0);
+  startSlider();
+})();
+  
 </script>
