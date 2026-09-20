@@ -152,6 +152,21 @@ latest_posts:
   </a>
 </p>
 
+
+
+<!-- ==================================================
+     GROUP PHOTOGRAPH / RESEARCH HIGHLIGHTS IMAGE
+     ================================================== -->
+---
+<div style="text-align: center; margin: 20px 0 40px;">
+  <img src="{{ '/assets/img/6.jpg' | relative_url }}"
+       style="width: 80%; max-width: 1100px; border-radius: 6px;"
+       alt="Applied Computational Mechanics Group">
+</div>
+
+
+
+
 <!-- ==================================================
      ALL ACMG HOMEPAGE CSS
      ================================================== -->
