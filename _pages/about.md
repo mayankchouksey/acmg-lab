@@ -203,7 +203,7 @@ latest_posts:
        alt="Applied Computational Mechanics Group">
 </div>
 
-<p>Meet the ACMG team on our 
+<p>Meet our team on the 
   <a href="{{ '/people/' | relative_url }}">team</a> page.
 </p>
 <!-- --- -->
