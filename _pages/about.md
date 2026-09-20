@@ -573,7 +573,7 @@ latest_posts:
 
 .acmg-group-photo {
   max-width: 1100px;
-  margin: 25px auto 15px;
+  margin: 75px auto 15px;
   overflow: hidden;
   border-radius: 6px;
 }
