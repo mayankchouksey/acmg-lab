@@ -203,6 +203,14 @@ latest_posts:
        alt="Applied Computational Mechanics Group">
 </div>
 
+<div class="acmg-group-photo">
+  <img src="{{ '/assets/img/6.jpg' | relative_url }}"
+       alt="Applied Computational Mechanics Group">
+</div>
+
+<p>Meet the ACMG team on our <a href="{{ '/team/' | relative_url }}">team</a> page.</p>
+
+
 <p>to meet all the ACMG group member, please visit
 the <a href="{{ '/team/' | relative_url }}">team</a> page.
 </p>
@@ -567,6 +575,26 @@ the <a href="{{ '/team/' | relative_url }}">team</a> page.
   max-width: 950px;
 }
 
+/* --------------------------------------------------
+   ACMG Group Photo
+   -------------------------------------------------- */
+
+.acmg-group-photo {
+  max-width: 1100px;
+  margin: 25px auto 15px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.acmg-group-photo img {
+  display: block;
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+  
 /* --------------------------------------------------
   News and Highlights
   -------------------------------------------------- */
