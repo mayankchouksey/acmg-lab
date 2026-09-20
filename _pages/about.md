@@ -97,18 +97,15 @@ latest_posts:
 
 <h2 class="acmg-section-title">News &amp; Highlights</h2>
 
-<div class="acmg-news-home">
-  {% assign recent_news = site.news | sort: "date" | reverse %}
-  {% for item in recent_news limit:4 %}
-    <div class="acmg-news-item">
-      {% if item.image and item.image != "" %}
-        <div class="acmg-news-image">
-          <img src="{{ item.image | relative_url }}"
-               alt="{{ item.title }}">
-        </div>
-      {% endif %}
+<div class="acmg-news-window">
+  <div class="acmg-news-track">
 
-      <div class="acmg-news-content">
+    {% assign recent_news = site.news | sort: "date" | reverse %}
+
+    {% for item in recent_news limit:6 %}
+      <a class="acmg-news-item"
+         href="{{ item.url | relative_url }}">
+
         <div class="acmg-news-meta">
           {{ item.date | date: "%d %B %Y" }}
           {% if item.category %}
@@ -118,14 +115,34 @@ latest_posts:
           {% endif %}
         </div>
 
-        <h3>{{ item.title }}</h3>
-
-        <div class="acmg-news-description">
-          {{ item.content }}
+        <div class="acmg-news-title">
+          {{ item.title }}
         </div>
-      </div>
-    </div>
-  {% endfor %}
+
+      </a>
+    {% endfor %}
+
+    {% for item in recent_news limit:6 %}
+      <a class="acmg-news-item"
+         href="{{ item.url | relative_url }}">
+
+        <div class="acmg-news-meta">
+          {{ item.date | date: "%d %B %Y" }}
+          {% if item.category %}
+            <span class="acmg-news-category">
+              {{ item.category }}
+            </span>
+          {% endif %}
+        </div>
+
+        <div class="acmg-news-title">
+          {{ item.title }}
+        </div>
+
+      </a>
+    {% endfor %}
+
+  </div>
 </div>
 
 <p class="acmg-news-more">
@@ -269,8 +286,8 @@ latest_posts:
 }
 
 /* --------------------------------------------------
-   News and Highlights
-   -------------------------------------------------- */
+  News and Highlights
+  -------------------------------------------------- */
 
 .acmg-section-title {
   margin-top: 45px;
@@ -279,39 +296,53 @@ latest_posts:
   font-weight: 500;
 }
 
-.acmg-news-home {
-  max-width: 900px;
+.acmg-news-window {
+  position: relative;
+  max-width: 1100px;
+  height: 270px;
   margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.015);
+
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 12%,
+    black 88%,
+    transparent 100%
+  );
+
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 12%,
+    black 88%,
+    transparent 100%
+  );
+}
+
+.acmg-news-track {
+  display: flex;
+  flex-direction: column;
+  animation: acmg-news-scroll 28s linear infinite;
 }
 
 .acmg-news-item {
-  display: flex;
-  gap: 24px;
-  padding: 20px 0;
-  border-bottom: 1px solid rgba(100, 100, 100, 0.20);
+  display: block;
+  padding: 20px 35px;
+  text-decoration: none !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  transition: background 0.2s ease;
 }
 
-.acmg-news-item:first-child {
-  padding-top: 0;
-}
-
-.acmg-news-image {
-  flex: 0 0 180px;
-}
-
-.acmg-news-image img {
-  width: 180px;
-  height: 115px;
-  object-fit: cover;
-  border-radius: 4px;
-}
-
-.acmg-news-content {
-  flex: 1;
+.acmg-news-item:hover {
+  background: rgba(0, 0, 0, 0.035);
 }
 
 .acmg-news-meta {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   color: rgba(80, 80, 80, 0.75);
   margin-bottom: 5px;
 }
@@ -322,24 +353,15 @@ latest_posts:
   border-left: 1px solid rgba(80, 80, 80, 0.35);
 }
 
-.acmg-news-content h3 {
-  margin: 0 0 7px 0;
-  font-size: 1.15rem;
-  font-weight: 500;
-}
-
-.acmg-news-description {
-  font-size: 0.95rem;
-  line-height: 1.55;
-}
-
-.acmg-news-description p {
-  margin: 0;
+.acmg-news-title {
+  font-size: 1.12rem;
+  line-height: 1.45;
+  color: rgba(25, 25, 25, 0.92);
 }
 
 .acmg-news-more {
   text-align: center;
-  margin-top: 22px;
+  margin-top: 18px;
 }
 
 .acmg-news-more a {
@@ -349,6 +371,34 @@ latest_posts:
 
 .acmg-news-more a:hover {
   text-decoration: underline;
+}
+
+@keyframes acmg-news-scroll {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+.acmg-news-window:hover .acmg-news-track {
+  animation-play-state: paused;
+}
+
+@media (max-width: 600px) {
+  .acmg-news-window {
+    height: 250px;
+  }
+
+  .acmg-news-item {
+    padding: 18px 22px;
+  }
+
+  .acmg-news-title {
+    font-size: 1rem;
+  }
 }
 
 /* --------------------------------------------------
