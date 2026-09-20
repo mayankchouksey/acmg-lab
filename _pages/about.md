@@ -204,7 +204,7 @@ latest_posts:
 </div>
 
 <p>Meet the ACMG team on our 
-  <a href="{{ '/team/' | relative_url }}">team</a> page.
+  <a href="{{ '/people/' | relative_url }}">team</a> page.
 </p>
 <!-- --- -->
 
