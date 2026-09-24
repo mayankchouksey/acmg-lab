@@ -59,7 +59,7 @@ latest_posts:
 <!-- Graphical ABSTRACT -->
 
 <div class="acmg-graphical-photo">
-  <img src="{{ '/assets/img/01_WebHome.png' | relative_url }}"
+  <img src="{{ '/assets/img/01_WebHome.webp' | relative_url }}"
        alt="Applied Computational Mechanics Group">
 </div>
 
