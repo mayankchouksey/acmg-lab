@@ -91,9 +91,12 @@ latest_posts:
 </p>
 <!-- --- -->
 
+
 <!-- ==================================================
      RESEARCH VISUALS
      ================================================== -->
+
+<h2 class="acmg-section-title">Research in Action</h2>
 
 <div class="acmg-research-slider">
 
