@@ -37,6 +37,60 @@ latest_posts:
   </div>
 </section>
 
+
+<!-- ==================================================
+     WELCOME MESSAGE
+     ================================================== -->
+
+<p class="acmg-welcome">
+  Welcome to the Applied Computational Mechanics Group (ACMG)
+  at the Indian Institute of Technology Indore.
+</p>
+---
+
+<!-- ==================================================
+     WHAT WE DO AT ACMG
+     ================================================== -->
+
+<h2 class="acmg-section-title">What We Do at ACMG</h2>
+<!-- <h2>What We Do at ACMG</h2> -->
+
+
+<!-- Graphical ABSTRACT -->
+
+<div class="acmg-group-photo">
+  <img src="{{ '/assets/img/01_WebHome.png' | relative_url }}"
+       alt="Applied Computational Mechanics Group">
+</div>
+
+
+<p>
+  Materials respond differently when they are stretched, compressed, heated,
+  loaded quickly, or subjected to complex conditions. Understanding these
+  responses helps us predict when and how materials will deform, become
+  damaged, or eventually fail.
+</p>
+
+<p>
+  At ACMG, we use mechanics, mathematics, and computational methods to study
+  these behaviours. We look at what happens inside materials at small scales
+  and how these mechanisms influence their overall response. Our work covers
+  deformation, plasticity, damage, fracture, and failure, including behaviour
+  under dynamic loading and in advanced materials and energy-storage systems.
+</p>
+
+<p>
+  In simple terms, we try to understand
+  <strong>why materials behave the way they do—and use that understanding
+  to predict what happens next.</strong>
+</p>
+
+<p>
+  For a more detailed description of our research directions, please visit
+  the <a href="{{ '/research/' | relative_url }}">Research</a> page.
+</p>
+<!-- --- -->
+
 <!-- ==================================================
      RESEARCH VISUALS
      ================================================== -->
@@ -147,52 +201,6 @@ latest_posts:
   </div>
 
 </div>
-
-
-<!-- ==================================================
-     WELCOME MESSAGE
-     ================================================== -->
-
-<p class="acmg-welcome">
-  Welcome to the Applied Computational Mechanics Group (ACMG)
-  at the Indian Institute of Technology Indore.
-</p>
----
-
-<!-- ==================================================
-     WHAT WE DO AT ACMG
-     ================================================== -->
-
-<h2 class="acmg-section-title">What We Do at ACMG</h2>
-<!-- <h2>What We Do at ACMG</h2> -->
-
-<p>
-  Materials respond differently when they are stretched, compressed, heated,
-  loaded quickly, or subjected to complex conditions. Understanding these
-  responses helps us predict when and how materials will deform, become
-  damaged, or eventually fail.
-</p>
-
-<p>
-  At ACMG, we use mechanics, mathematics, and computational methods to study
-  these behaviours. We look at what happens inside materials at small scales
-  and how these mechanisms influence their overall response. Our work covers
-  deformation, plasticity, damage, fracture, and failure, including behaviour
-  under dynamic loading and in advanced materials and energy-storage systems.
-</p>
-
-<p>
-  In simple terms, we try to understand
-  <strong>why materials behave the way they do—and use that understanding
-  to predict what happens next.</strong>
-</p>
-
-<p>
-  For a more detailed description of our research directions, please visit
-  the <a href="{{ '/research/' | relative_url }}">Research</a> page.
-</p>
-<!-- --- -->
-
 
 <!-- ==================================================
      GROUP PHOTOGRAPH / RESEARCH HIGHLIGHTS IMAGE
