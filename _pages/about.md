@@ -58,7 +58,7 @@ latest_posts:
 
 <!-- Graphical ABSTRACT -->
 
-<div class="acmg-group-photo">
+<div class="acmg-graphical-photo">
   <img src="{{ '/assets/img/01_WebHome.png' | relative_url }}"
        alt="Applied Computational Mechanics Group">
 </div>
@@ -73,9 +73,9 @@ latest_posts:
 
 <p>
   At ACMG, we use mechanics, mathematics, and computational methods to study
-  these behaviours. We look at what happens inside materials at small scales
+  these behaviors. We look at what happens inside materials at small scales
   and how these mechanisms influence their overall response. Our work covers
-  deformation, plasticity, damage, fracture, and failure, including behaviour
+  deformation, plasticity, damage, fracture, and failure, including behavior
   under dynamic loading and in advanced materials and energy-storage systems.
 </p>
 
@@ -578,6 +578,24 @@ latest_posts:
   max-width: 950px;
 }
 
+/* --------------------------------------------------
+   ACMG GRAPHICAL ABSTRACT
+   -------------------------------------------------- */
+
+.acmg-graphical-photo {
+  max-width: 1100px;
+  margin: 25px auto 15px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.acmg-graphical-photo img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+  
 /* --------------------------------------------------
    ACMG Group Photo
    -------------------------------------------------- */
