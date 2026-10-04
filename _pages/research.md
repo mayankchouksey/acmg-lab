@@ -171,7 +171,7 @@ nav_order: 3
 
 <hr class="research-divider">
 <div class="research-area">
-  <h2>Multiscale Modelling of Lightweight, Damage-Tolerant Structures</h2>
+  <h3>Multiscale Modelling of Lightweight, Damage-Tolerant Structures</h3>
 
   <p>
     The mechanical response of lightweight cellular and architected materials is governed by their underlying microstructure and the deformation mechanisms activated under external loading. Understanding this relationship is important for predicting their energy absorption and damage tolerance, particularly under dynamic loading.
