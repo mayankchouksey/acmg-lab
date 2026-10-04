@@ -17,9 +17,9 @@ nav_order: 3
 <div class="page-header-line"></div>
 
 <p class="research-intro">
-<--  Our research focuses on understanding and predicting the mechanical behavior of materials through computational modelling. We investigate specific problems involving deformation, damage and failure, developing numerical formulations that connect material behavior at different length and time scales. -->
+<!--  Our research focuses on understanding and predicting the mechanical behavior of materials through computational modelling. We investigate specific problems involving deformation, damage and failure, developing numerical formulations that connect material behavior at different length and time scales. -->
   
-    Our research focuses on understanding and predicting the mechanical behavior of materials through computational and theoretical approaches. 
+  Our research focuses on understanding and predicting the mechanical behavior of materials through computational and theoretical approaches. 
   We investigate specific problems combining mechanics, numerical methods, and material modelling to investigate deformation, damage, and failure under complex loading conditions at different length and time scales.  
 </p>
 
