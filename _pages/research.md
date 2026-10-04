@@ -23,6 +23,8 @@ nav_order: 3
   We investigate specific problems combining mechanics, numerical methods, and material modelling to investigate deformation, damage, and failure under complex loading conditions at different length and time scales.  
 </p>
 
+
+<hr class="research-divider">
 <div class="research-area">
   <h3>Micromechanical Modelling of Ductile Failure</h3>
 
@@ -77,6 +79,8 @@ nav_order: 3
 
 </div>
 
+
+<hr class="research-divider">
 <div class="research-area">
   <h3>Coupled Electrochemical–Mechanical Modelling of Batteries</h3>
 
@@ -128,7 +132,7 @@ nav_order: 3
 </div>
 
 
-
+<hr class="research-divider">
 <div class="research-area">
   <h3>Deformation and Failure of Layered MAX Phases</h3>
 
@@ -165,7 +169,7 @@ nav_order: 3
 </div>
 
 
-
+<hr class="research-divider">
 <div class="research-area">
   <h2>Multiscale Modelling of Lightweight, Damage-Tolerant Structures</h2>
 
@@ -202,7 +206,7 @@ nav_order: 3
 
 
 
-
+<hr class="research-divider">
 <h2>Research Approach</h2>
 <p>
   Our research integrates continuum mechanics, computational modelling,
@@ -217,6 +221,12 @@ nav_order: 3
 
 
 <style>
+.research-divider {
+  border: 0;
+  border-top: 1px solid #e5e5e5;
+  margin: 42px 0;
+}
+  
 .post-title {
   display: none;
 }
