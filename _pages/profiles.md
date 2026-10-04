@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /people/
-title: "team"
+title: Team
 description: ""
 nav: true
 nav_order: 2
