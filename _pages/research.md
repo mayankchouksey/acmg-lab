@@ -128,7 +128,7 @@ nav_order: 3
 
 </div>
 
-<h2>Deformation and Failure of Layered MAX Phases</h2>
+<h3>Deformation and Failure of Layered MAX Phases</h3>
 
 <div class="research-area">
 
@@ -141,10 +141,7 @@ nav_order: 3
   </p>
 
   <p>
-    We investigate the deformation and failure of these materials using
-    <strong>crystal plasticity finite element modelling (CPFEM)</strong>.
-    The framework accounts for crystallographic deformation mechanisms and
-    their influence on the macroscopic mechanical response.
+    We investigate the deformation and failure of these materials using crystal plasticity finite element modelling (CPFEM). The framework accounts for crystallographic deformation mechanisms and their influence on the macroscopic mechanical response.
   </p>
 
   <p>
