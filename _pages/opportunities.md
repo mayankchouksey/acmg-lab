@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /opportunities/
-title: Opportunities
+title: opportunities
 description: ""
 nav: true
 nav_order: 7
