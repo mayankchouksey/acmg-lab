@@ -23,9 +23,8 @@ nav_order: 3
   We investigate specific problems combining mechanics, numerical methods, and material modelling to investigate deformation, damage, and failure under complex loading conditions at different length and time scales.  
 </p>
 
-<h3>Micromechanical Modelling of Ductile Failure</h3>
-
 <div class="research-area">
+  <h3>Micromechanical Modelling of Ductile Failure</h3>
 
   <p>
     Ductile failure in metals involves the nucleation, growth and coalescence
@@ -78,9 +77,8 @@ nav_order: 3
 
 </div>
 
-<h2>Coupled Electrochemical–Mechanical Modelling of Batteries</h2>
-
 <div class="research-area">
+  <h3>Coupled Electrochemical–Mechanical Modelling of Batteries</h3>
 
   <p>
     Lithium-ion batteries undergo significant changes in their mechanical state
