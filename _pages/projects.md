@@ -3,7 +3,7 @@ layout: page
 permalink: /projects/
 title: projects
 description: ""
-nav: true
+nav: false
 nav_order: 4
 ---
 
