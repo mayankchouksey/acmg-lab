@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /research-output/
-title: research output
+title: Research output
 description: ""
 nav: true
 nav_order: 5
