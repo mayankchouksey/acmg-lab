@@ -1,13 +1,11 @@
 ---
 layout: page
 permalink: /research/
-title: research
+title: Research
 description: ""
 nav: true
 nav_order: 3
 ---
-
-
 
 <div class="page-header-clean">
   <h1>Research</h1>
@@ -19,90 +17,209 @@ nav_order: 3
 <div class="page-header-line"></div>
 
 <p class="research-intro">
-  The Applied Computational Mechanics Group (ACMG) develops computational
-  and theoretical approaches to understand, model, and predict the
-  mechanical behaviour of materials across length and time scales.
-  Our research combines mechanics, numerical methods, and material
-  modelling to investigate deformation, damage, and failure under
-  complex loading conditions.
+<--  Our research focuses on understanding and predicting the mechanical behavior of materials through computational modelling. We investigate specific problems involving deformation, damage and failure, developing numerical formulations that connect material behavior at different length and time scales. -->
+  
+    Our research focuses on understanding and predicting the mechanical behavior of materials through computational and theoretical approaches. 
+  We investigate specific problems combining mechanics, numerical methods, and material modelling to investigate deformation, damage, and failure under complex loading conditions at different length and time scales.  
 </p>
 
-<h2>Research Areas</h2>
+<h2>Micromechanical Modelling of Ductile Failure</h2>
 
 <div class="research-area">
 
-  <h3>Micromechanics &amp; Homogenization</h3>
+  <p>
+    Ductile failure in metals involves the nucleation, growth and coalescence
+    of microscopic voids. Predicting this process under complex loading
+    conditions requires an understanding of the interaction between plastic
+    deformation and evolving microstructure.
+  </p>
 
   <p>
-    Development of computational and theoretical approaches for
-    understanding the effective mechanical response of heterogeneous
-    materials. Research focuses on microstructure–property relationships,
-    homogenization, and multiscale descriptions of material behaviour.
+    At ACMG, we investigate ductile failure using
+    <strong>micromechanical unit-cell calculations</strong>, in which the
+    deformation of a representative material volume containing a void is
+    explicitly modelled. These calculations provide insight into the influence
+    of stress triaxiality, Lode parameter and loading history on void evolution
+    and material failure.
+  </p>
+
+  <p>
+    Our computational approach combines:
+  </p>
+
+  <ul>
+    <li>
+      <strong>Micromechanical unit-cell modelling</strong> to investigate void
+      growth and coalescence under different stress states.
+    </li>
+    <li>
+      <strong>Computational plasticity</strong> to describe the inelastic
+      deformation of the surrounding matrix.
+    </li>
+    <li>
+      <strong>Numerical homogenization</strong> to establish the relationship
+      between the macroscopic stress state and the microscopic deformation
+      response.
+    </li>
+    <li>
+      <strong>Instability-based failure criteria</strong> to identify the onset
+      of material failure from the micromechanical response.
+    </li>
+  </ul>
+
+  <p>
+    We also extend these formulations to dynamic loading conditions, accounting
+    for material rate sensitivity, inertia and thermal softening. An important
+    aspect of this work is understanding how these effects influence the onset
+    of ductile failure, particularly under low-triaxiality loading.
   </p>
 
 </div>
 
+<h2>Coupled Electrochemical–Mechanical Modelling of Batteries</h2>
+
 <div class="research-area">
 
-  <h3>Plasticity &amp; Constitutive Modelling</h3>
+  <p>
+    Lithium-ion batteries undergo significant changes in their mechanical state
+    during charging and discharging. Lithium intercalation leads to changes in
+    electrode particle volume, while the resulting mechanical stresses can
+    influence electrode deformation and degradation.
+  </p>
 
   <p>
-    Development of constitutive models for plastic deformation under
-    complex loading conditions. Particular emphasis is placed on
-    non-proportional loading, loading-path effects, rate dependence,
-    and the evolution of material behaviour.
+    At ACMG, we investigate these phenomena through
+    <strong>coupled electrochemical–mechanical modelling</strong>, combining
+    homogenized solid mechanics (SOM) formulations with electrochemical models
+    such as the Doyle–Fuller–Newman (DFN) model.
+  </p>
+
+  <p>
+    Our approach involves:
+  </p>
+
+  <ul>
+    <li>
+      <strong>Electrochemical modelling using the DFN framework</strong> to
+      describe lithium transport and electrochemical processes within battery
+      electrodes.
+    </li>
+    <li>
+      <strong>Homogenized solid mechanics</strong> to represent the macroscopic
+      mechanical response of porous electrodes.
+    </li>
+    <li>
+      <strong>Elastoplastic constitutive modelling</strong> to capture the
+      mechanical response of electrode materials.
+    </li>
+    <li>
+      <strong>Electrochemical–mechanical coupling</strong> to investigate the
+      relationship between lithium concentration, electrode deformation and
+      the development of mechanical stresses.
+    </li>
+  </ul>
+
+  <p>
+    The broader objective is to develop computational frameworks that can
+    describe the evolution of mechanical stresses and deformation during
+    battery operation and help understand the mechanisms associated with
+    electrode degradation.
   </p>
 
 </div>
 
+<h2>Deformation and Failure of Layered MAX Phases</h2>
+
 <div class="research-area">
 
-  <h3>Damage &amp; Fracture Mechanics</h3>
+  <p>
+    MAX phases are layered ceramic materials that exhibit a combination of
+    metallic and ceramic characteristics. Their deformation behaviour is
+    strongly influenced by their hexagonal crystal structure, anisotropic
+    mechanical response and the availability of different deformation
+    mechanisms.
+  </p>
 
   <p>
-    Computational investigation of damage initiation, evolution,
-    void growth, coalescence, and fracture. The research aims to
-    connect microscale mechanisms of material degradation with
-    macroscopic failure behaviour.
+    We investigate the deformation and failure of these materials using
+    <strong>crystal plasticity finite element modelling (CPFEM)</strong>.
+    The framework accounts for crystallographic deformation mechanisms and
+    their influence on the macroscopic mechanical response.
+  </p>
+
+  <p>
+    Our investigations include:
+  </p>
+
+  <ul>
+    <li>
+      <strong>Crystallographic slip</strong> involving basal and non-basal
+      slip systems.
+    </li>
+    <li>
+      <strong>Anisotropic deformation</strong> arising from the layered
+      hexagonal crystal structure.
+    </li>
+    <li>
+      <strong>Kinking and cleavage</strong> as mechanisms contributing to
+      deformation and failure.
+    </li>
+    <li>
+      <strong>Crystal plasticity finite element modelling</strong> to
+      investigate the influence of crystallographic mechanisms on the overall
+      mechanical response.
+    </li>
+  </ul>
+
+  <p>
+    These studies aim to establish a computational understanding of how
+    crystallographic deformation mechanisms govern the mechanical behaviour
+    and failure of layered materials.
   </p>
 
 </div>
 
+<h2>Multiscale Modelling of Lightweight, Damage-Tolerant Structures</h2>
+
 <div class="research-area">
 
-  <h3>Dynamic &amp; Extreme Loading</h3>
-
   <p>
-    Investigation of material behaviour under high strain rates and
-    dynamic loading conditions. Research considers the roles of
-    inertia, rate sensitivity, thermal effects, and loading history
-    in deformation and failure.
+    The mechanical response of lightweight cellular and architected materials
+    is governed by their underlying microstructure and the deformation
+    mechanisms activated under external loading. Understanding this
+    relationship is important for predicting their energy absorption and
+    damage tolerance, particularly under dynamic loading.
   </p>
 
-</div>
-
-<div class="research-area">
-
-  <h3>Crystal Plasticity &amp; Deformation Mechanisms</h3>
-
   <p>
-    Computational study of deformation mechanisms in crystalline
-    materials, including crystallographic slip, anisotropy, and
-    microstructure-driven deformation. The research seeks to relate
-    crystal-scale mechanisms to the macroscopic mechanical response.
+    Our work in this area explores computational approaches that connect the
+    response of material constituents and structural architectures to their
+    overall mechanical behaviour.
   </p>
 
-</div>
+  <p>
+    The modelling approach involves:
+  </p>
 
-<div class="research-area">
-
-  <h3>Electro-chemo-mechanical Modelling</h3>
+  <ul>
+    <li>
+      <strong>Micromechanical and homogenization-based formulations</strong>
+      to relate structural architecture to effective mechanical properties.
+    </li>
+    <li>
+      <strong>Computational solid mechanics</strong> to investigate
+      deformation under mechanical and dynamic loading.
+    </li>
+    <li>
+      <strong>Damage and failure modelling</strong> to study the evolution
+      of structural integrity under demanding loading conditions.
+    </li>
+  </ul>
 
   <p>
-    Development of multiphysics approaches for studying the coupled
-    mechanical, electrochemical, and transport behaviour of energy
-    storage materials. Particular interest lies in understanding
-    deformation, damage, and failure in battery electrodes.
+    These approaches provide a basis for investigating the design and
+    mechanical performance of lightweight, damage-tolerant structures,
+    including structures intended for dynamic threat mitigation.
   </p>
 
 </div>
@@ -110,12 +227,11 @@ nav_order: 3
 <h2>Research Approach</h2>
 
 <p>
-  Our research integrates continuum mechanics, computational
-  modelling, numerical methods, and micromechanical approaches.
-  Depending on the problem, these methods are combined with
-  experimental observations to develop physically informed models
-  capable of describing material behaviour under realistic loading
-  conditions.
+  Our research integrates continuum mechanics, computational modelling,
+  numerical methods, and micromechanical approaches. Depending on the
+  problem, these methods are combined to develop physically informed
+  computational frameworks capable of describing material behaviour under
+  realistic loading conditions.
 </p>
 
 <style>
@@ -172,6 +288,17 @@ nav_order: 3
 .research-area p {
   margin-top: 0;
   line-height: 1.7;
+}
+
+.research-area ul {
+  max-width: 900px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.research-area li {
+  margin-bottom: 8px;
 }
 
 @media (max-width: 600px) {
