@@ -23,7 +23,7 @@ nav_order: 3
   We investigate specific problems combining mechanics, numerical methods, and material modelling to investigate deformation, damage, and failure under complex loading conditions at different length and time scales.  
 </p>
 
-<h2>Micromechanical Modelling of Ductile Failure</h2>
+<h3>Micromechanical Modelling of Ductile Failure</h3>
 
 <div class="research-area">
 
@@ -36,7 +36,7 @@ nav_order: 3
 
   <p>
     At ACMG, we investigate ductile failure using
-    <strong>micromechanical unit-cell calculations</strong>, in which the
+    micromechanical unit-cell calculations, in which the
     deformation of a representative material volume containing a void is
     explicitly modelled. These calculations provide insight into the influence
     of stress triaxiality, Lode parameter and loading history on void evolution
@@ -61,10 +61,12 @@ nav_order: 3
       between the macroscopic stress state and the microscopic deformation
       response.
     </li>
+<!--
     <li>
       <strong>Instability-based failure criteria</strong> to identify the onset
       of material failure from the micromechanical response.
     </li>
+-->    
   </ul>
 
   <p>
