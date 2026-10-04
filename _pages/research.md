@@ -125,19 +125,15 @@ nav_order: 3
     battery operation and help understand the mechanisms associated with
     electrode degradation.
   </p>
-
 </div>
 
-<h3>Deformation and Failure of Layered MAX Phases</h3>
+
 
 <div class="research-area">
+  <h3>Deformation and Failure of Layered MAX Phases</h3>
 
   <p>
-    MAX phases are layered ceramic materials that exhibit a combination of
-    metallic and ceramic characteristics. Their deformation behaviour is
-    strongly influenced by their hexagonal crystal structure, anisotropic
-    mechanical response and the availability of different deformation
-    mechanisms.
+    MAX phases are layered ceramic materials that exhibit a combination of metallic and ceramic characteristics. Their deformation behavior is strongly influenced by their hexagonal crystal structure, anisotropic mechanical response and the availability of different deformation mechanisms.
   </p>
 
   <p>
@@ -150,48 +146,35 @@ nav_order: 3
 
   <ul>
     <li>
-      <strong>Crystallographic slip</strong> involving basal and non-basal
-      slip systems.
+      <strong>Crystallographic slip</strong> involving basal and non-basal slip systems.
     </li>
     <li>
-      <strong>Anisotropic deformation</strong> arising from the layered
-      hexagonal crystal structure.
+      <strong>Anisotropic deformation</strong> arising from the layered hexagonal crystal structure.
     </li>
     <li>
-      <strong>Kinking and cleavage</strong> as mechanisms contributing to
-      deformation and failure.
+      <strong>Kinking and cleavage</strong> as mechanisms contributing to deformation and failure.
     </li>
     <li>
-      <strong>Crystal plasticity finite element modelling</strong> to
-      investigate the influence of crystallographic mechanisms on the overall
-      mechanical response.
+      <strong>Crystal plasticity finite element modelling</strong> to investigate the influence of crystallographic mechanisms on the overall mechanical response.
     </li>
   </ul>
 
   <p>
-    These studies aim to establish a computational understanding of how
-    crystallographic deformation mechanisms govern the mechanical behaviour
-    and failure of layered materials.
+    These studies aim to establish a computational understanding of how crystallographic deformation mechanisms govern the mechanical behavior and failure of layered materials.
   </p>
-
 </div>
 
-<h2>Multiscale Modelling of Lightweight, Damage-Tolerant Structures</h2>
+
 
 <div class="research-area">
+  <h2>Multiscale Modelling of Lightweight, Damage-Tolerant Structures</h2>
 
   <p>
-    The mechanical response of lightweight cellular and architected materials
-    is governed by their underlying microstructure and the deformation
-    mechanisms activated under external loading. Understanding this
-    relationship is important for predicting their energy absorption and
-    damage tolerance, particularly under dynamic loading.
+    The mechanical response of lightweight cellular and architected materials is governed by their underlying microstructure and the deformation mechanisms activated under external loading. Understanding this relationship is important for predicting their energy absorption and damage tolerance, particularly under dynamic loading.
   </p>
 
   <p>
-    Our work in this area explores computational approaches that connect the
-    response of material constituents and structural architectures to their
-    overall mechanical behaviour.
+    Our work in this area explores computational approaches that connect the response of material constituents and structural architectures to their overall mechanical behavior.
   </p>
 
   <p>
@@ -200,29 +183,27 @@ nav_order: 3
 
   <ul>
     <li>
-      <strong>Micromechanical and homogenization-based formulations</strong>
-      to relate structural architecture to effective mechanical properties.
+      <strong>Micromechanical and homogenization-based formulations</strong> to relate structural architecture to effective mechanical properties.
     </li>
     <li>
-      <strong>Computational solid mechanics</strong> to investigate
-      deformation under mechanical and dynamic loading.
+      <strong>Computational solid mechanics</strong> to investigate deformation under mechanical and dynamic loading.
     </li>
     <li>
-      <strong>Damage and failure modelling</strong> to study the evolution
-      of structural integrity under demanding loading conditions.
+      <strong>Damage and failure modelling</strong> to study the evolution of structural integrity under demanding loading conditions.
     </li>
   </ul>
 
   <p>
-    These approaches provide a basis for investigating the design and
-    mechanical performance of lightweight, damage-tolerant structures,
-    including structures intended for dynamic threat mitigation.
+    These approaches provide a basis for investigating the design and mechanical performance of lightweight, damage-tolerant structures, including structures intended for dynamic threat mitigation.
   </p>
-
 </div>
 
-<h2>Research Approach</h2>
 
+
+
+
+
+<h2>Research Approach</h2>
 <p>
   Our research integrates continuum mechanics, computational modelling,
   numerical methods, and micromechanical approaches. Depending on the
@@ -230,6 +211,10 @@ nav_order: 3
   computational frameworks capable of describing material behaviour under
   realistic loading conditions.
 </p>
+
+
+
+
 
 <style>
 .post-title {
