@@ -29,7 +29,7 @@ nav_order: 2
 
   <!-- PI PHOTO -->
   <div class="pi-photo">
-    <img src="{{ '/assets/img/6.jpg' | relative_url }}"
+    <img src="{{ '/assets/img/Mayank.jpeg' | relative_url }}"
          alt="Dr. Mayank Chouksey">
   </div>
 
@@ -182,7 +182,7 @@ nav_order: 2
   <div class="student-card">
 
     <div class="student-photo">
-      <img src="{{ '/assets/img/Boy_I.png' | relative_url }}"
+      <img src="{{ '/assets/img/Boy_I.jpg' | relative_url }}"
            alt="Ashesh Parmar">
     </div>
 
@@ -237,7 +237,7 @@ nav_order: 2
   <!-- Student 2 -->
   <div class="student-card">
     <div class="student-photo">
-      <img src="{{ '/assets/img/Boy_I.png' | relative_url }}"
+      <img src="{{ '/assets/img/Boy_I.jpg' | relative_url }}"
            alt="Utkarsh Dubey">
     </div>
 
@@ -257,7 +257,7 @@ nav_order: 2
   <!-- Student 3 -->
   <div class="student-card">
     <div class="student-photo">
-      <img src="{{ '/assets/img/Boy_I.png' | relative_url }}"
+      <img src="{{ '/assets/img/Boy_I.jpg' | relative_url }}"
            alt="Anshuman Singh">
     </div>
 
@@ -290,7 +290,7 @@ nav_order: 2
   <!-- Student 1 -->
   <div class="student-card">
     <div class="student-photo">
-      <img src="{{ '/assets/img/Boy_I.png' | relative_url }}"
+      <img src="{{ '/assets/img/Boy_I.jpg' | relative_url }}"
            alt="Shivam Kumar Vishwakarma">
     </div>
 
