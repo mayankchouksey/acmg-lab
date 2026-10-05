@@ -153,7 +153,7 @@ nav_order: 2
   <div class="student-card">
 
     <div class="student-photo">
-      <img src="{{ '/assets/img/2.jpg' | relative_url }}"
+      <img src="{{ '/assets/img/Girl_I.jpeg' | relative_url }}"
            alt="Shradhha Gublake">
     </div>
 
@@ -182,7 +182,7 @@ nav_order: 2
   <div class="student-card">
 
     <div class="student-photo">
-      <img src="{{ '/assets/img/2.jpg' | relative_url }}"
+      <img src="{{ '/assets/img/Boy_I.png' | relative_url }}"
            alt="Ashesh Parmar">
     </div>
 
@@ -217,7 +217,7 @@ nav_order: 2
   <!-- Student 1 -->
   <div class="student-card">
     <div class="student-photo">
-      <img src="{{ '/assets/img/4.jpg' | relative_url }}"
+      <img src="{{ '/assets/img/Girl_I.jpeg' | relative_url }}"
            alt="Pranali Rao">
     </div>
 
@@ -237,7 +237,7 @@ nav_order: 2
   <!-- Student 2 -->
   <div class="student-card">
     <div class="student-photo">
-      <img src="{{ '/assets/img/3.jpg' | relative_url }}"
+      <img src="{{ '/assets/img/Boy_I.png' | relative_url }}"
            alt="Utkarsh Dubey">
     </div>
 
@@ -257,7 +257,7 @@ nav_order: 2
   <!-- Student 3 -->
   <div class="student-card">
     <div class="student-photo">
-      <img src="{{ '/assets/img/3.jpg' | relative_url }}"
+      <img src="{{ '/assets/img/Boy_I.png' | relative_url }}"
            alt="Anshuman Singh">
     </div>
 
@@ -290,7 +290,7 @@ nav_order: 2
   <!-- Student 1 -->
   <div class="student-card">
     <div class="student-photo">
-      <img src="{{ '/assets/img/5.jpg' | relative_url }}"
+      <img src="{{ '/assets/img/Boy_I.png' | relative_url }}"
            alt="Shivam Kumar Vishwakarma">
     </div>
 
