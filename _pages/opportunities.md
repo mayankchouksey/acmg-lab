@@ -27,105 +27,35 @@ nav_order: 7
 
 
 <!-- ============================================================
-     INTRODUCTION
+     RESEARCH CULTURE AND OPPORTUNITIES
      ============================================================ -->
 
 <p>
-  Research opportunities within ACMG span fundamental and applied
-  problems in computational mechanics and mechanics of materials.
-  Research directions are shaped by the broader interests of the group
-  as well as the interests, background, and aspirations of individual
-  researchers. We are open to discussing new research questions and directions
-  through interaction, discussion, and collaboration.
+  Research is a journey of questions, discoveries, and unexpected
+  challenges. At ACMG, we believe that every question is worth
+  exploring, every mistake is an opportunity to understand something
+  better, and every new idea deserves a thoughtful discussion.
 </p>
-
-
-<!-- ============================================================
-     PHD OPPORTUNITIES
-     ============================================================ -->
-
-<h2>PhD Opportunities</h2>
 
 <p>
-  PhD students undertake in-depth research addressing fundamental and
-  applied problems in computational mechanics and mechanics of
-  materials. The emphasis is on developing a strong understanding of
-  the underlying mechanics, formulating meaningful research questions,
-  and developing rigorous theoretical and computational approaches to
-  address them.
+  Our work spans computational mechanics and mechanics of materials,
+  where mathematical modelling and numerical simulations help us
+  understand how materials deform, respond to complex loading, and
+  eventually fail. We aim to turn fundamental questions into deeper
+  insights through rigorous analysis and creative problem-solving.
 </p>
-
-
-<!-- ============================================================
-     MS / MTECH OPPORTUNITIES
-     ============================================================ -->
-
-<h2>MS / MTech Opportunities</h2>
 
 <p>
-  MS and MTech students undertake focused research projects involving
-  computational modeling, advanced numerical techniques, and analysis
-  of material behavior. The work provides an opportunity to develop
-  research skills while addressing a well-defined problem in mechanics
-  and materials.
+  If these questions spark your curiosity, I would be happy to hear
+  from you. You are welcome to write to me about research opportunities,
+  whether you are considering a PhD, pursuing an undergraduate or
+  postgraduate project, or simply exploring a research direction.
+  You can find examples of the problems we work on in our
+  <a href="{{ '/research/' | relative_url }}">Research section</a>,
+  but you are equally welcome to get in touch to discuss your interests
+  and ideas.
 </p>
 
-
-<!-- ============================================================
-     UNDERGRADUATE RESEARCH
-     ============================================================ -->
-
-<h2>Undergraduate Research</h2>
-
-<p>
-  Undergraduate students can engage with ACMG through BTech projects,
-  research projects, and other academic activities, gaining exposure to computational
-  approaches and scientific research.
-</p>
-
-
-<!-- ============================================================
-     RESEARCH EXPERIENCE
-     ============================================================ -->
-
-<h2>Research Experience</h2>
-
-<p>
-  Students working with ACMG develop experience in both the fundamentals
-  of mechanics and the computational approaches used to investigate
-  complex problems in materials.
-</p>
-
-<ul>
-  <li>Computational mechanics and mechanics of materials</li>
-  <li>Advanced numerical and computational techniques</li>
-  <li>Mathematical and physical modelling of materials</li>
-  <li>Scientific computing and programming</li>
-  <li>Formulation and critical analysis of research problems</li>
-  <li>Research methodology and independent problem solving</li>
-  <li>Scientific writing, presentation, and communication</li>
-</ul>
-
-
-<!-- ============================================================
-     HOW TO CONNECT
-     ============================================================ -->
-
-<h2>How to Connect</h2>
-
-<p>
-  Interested students are encouraged to explore the
-  <a href="{{ '/research/' | relative_url }}">research areas</a>
-  of ACMG and get in touch to discuss their interests and possible
-  research directions.
-</p>
-
-<!--
-<p>
-  <strong>Email:</strong>
-  mayank@iiti.ac.in
-</p>
--->
 
 <!-- ============================================================
      PAGE STYLING
