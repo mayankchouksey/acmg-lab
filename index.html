@@ -79,14 +79,25 @@
   position: relative;
   z-index: 2;
   text-align: center;
+
+   /*
+   * Previous background and blur settings:
+   * background: rgba(255, 255, 255, 0.10);
+   * backdrop-filter: blur(1.5px);
+   * -webkit-backdrop-filter: blur(1.5px);
+   */
+
+   /* Updated settings: transparent background, no blur */
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  
   background: rgba(255, 255, 255, 0.10);
   padding: 28px 45px 25px;
   border-radius: 4px;
   width: fit-content;
   max-width: 90%;
   margin: 0 auto;
-  backdrop-filter: blur(1.5px);
-  -webkit-backdrop-filter: blur(1.5px);
 }
 
 /* Group name */
